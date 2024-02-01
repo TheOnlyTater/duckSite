@@ -1,0 +1,33 @@
+@import "https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap";
+:root {
+  --primary-color: #000;
+  --secondary-color: #8ee4f0;
+  --navbutton-primary: #fff;
+  --background-color: #000;
+  --text-color: #000;
+  --link-color: #000;
+  --hover-color: #000;
+  --border-color: #000;
+  --error-color: #000;
+  --success-color: #000;
+  --warning-color: #000;
+  --info-color: #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 5000px;
+  font-family: Sixtyfour, sans-serif;
+}
+
+a, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=index.6441dde9.css.map */

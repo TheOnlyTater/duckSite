@@ -1,0 +1,73 @@
+@import "./main.css";
+
+
+.navbar {
+    width: 100vw;
+
+    padding: .5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--secondary-color);
+}
+
+.navbar > * {
+    margin: 0 3em;
+}
+
+.navbar-logo {
+    height: 3em;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 3em;
+}
+
+.navbar-button {
+    position: relative;
+    padding: 1em;
+}
+
+.navbar-button a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    z-index: 3;
+}
+
+.navbar-button img {
+    display: none;
+}
+
+.navbar-button:hover img {
+    position: absolute;
+    top: -10px;
+    display: inline;
+    
+    width: 80%;
+    height: 4em;
+
+    rotate: 30deg;
+    animation: duck-button-appear .4s ease-in;
+    z-index: 2;
+}
+
+
+@keyframes duck-button-appear {
+    0% {
+        scale: 0;
+        bottom: 0;
+    }
+    70% {
+        scale: 1;
+        rotate: 3deg;
+        top: -10px;
+    }
+    90% {
+        scale: 1.35;
+    }
+}

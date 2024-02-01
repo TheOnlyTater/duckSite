@@ -1,0 +1,16 @@
+.make-flex-row {
+  display: flex;
+}
+
+.make-flex-col {
+  flex-direction: column;
+  display: flex;
+}
+
+.center-children {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/*# sourceMappingURL=temp.2bfd2527.css.map */
