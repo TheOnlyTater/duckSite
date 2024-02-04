@@ -1,7 +1,11 @@
 @import "./main.css";
 
+/*
+    TODO OPTIMIZE AND MAKE GOOD TIMINGS
+*/
 
 .navbar {
+    position: fixed;
     width: 100vw;
 
     padding: .5em;
@@ -11,6 +15,8 @@
     justify-content: space-between;
 
     background-color: var(--secondary-color);
+    overflow: hidden;
+    z-index: 9999999;
 }
 
 .navbar > * {
@@ -52,10 +58,13 @@
     height: 4em;
 
     rotate: 30deg;
-    animation: duck-button-appear .4s ease-in;
+    animation: duck-button-appear 1s ease-in;
     z-index: 2;
 }
 
+.hide-navbar {
+    animation: move-up 2s linear 2s 1 forwards;
+}
 
 @keyframes duck-button-appear {
     0% {
@@ -68,6 +77,73 @@
         top: -10px;
     }
     90% {
-        scale: 1.35;
+        scale: 1.3;
+    }
+}
+
+
+/* NAVBAR HIDE ANIMATION */
+.wave-parent {
+    position: absolute;
+    bottom: 0;
+    right: -55%;
+    transform: translate(-50%, 0);
+}
+
+.waves {
+    position: relative;
+
+    width: 105vw;
+    height:4vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    max-height:150px;
+    animation: 1s linear wave-transformation forwards;
+
+}
+  
+/* Animation */
+  
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px,0,0);
+    }
+    100% { 
+        transform: translate3d(85px,0,0);
+    }
+}
+
+@keyframes wave-transformation {
+    from {
+        transform: scaleY(1);
+    } to {
+        transform: scaleY(10);
+    }
+}
+
+@keyframes move-up {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-200px);
     }
 }

@@ -9,9 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/navbar.css">
+        <link rel="stylesheet" href="./styles/hero.css">
+        <link rel="stylesheet" href="./styles/helperStyles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
     <body>
-        <div class="navbar">
+        <div class="navbar" id="navbar-element">
             <a>
                 <img class="navbar-logo" src="../assets/duck-logo.png" alt="logo">
             </a>
@@ -19,25 +22,102 @@
                 <ul>
                     <li class="navbar-button">
                         <a href="">
-                            hjem
+                            HOME
                         </a>
                         <img src="../assets/button-duck.svg">
                     </li>
                     <li  class="navbar-button">
                         <a href="">
-                            om oss
+                            ABOUT US
                         </a>
                         <img src="../assets/button-duck.svg">
                     </li>
                     <li  class="navbar-button">
                         <a href="">
-                            butikk
+                            STORE
                         </a>
                         <img src="../assets/button-duck.svg">
                     </li>
                 </ul>
             </nav>
+            <div id="navbar-waves" class="hidden wave-parent">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+            </div>
         </div>
-        
+        <header class="hero">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex-center">
+                        <div class="swiper-info flex-col">
+                            <h1>DUCKS RULE, GIRLS DRULE</h1>
+                            <p>
+                                Meet our Summer lover Ducky.
+                                The Duck behind why ducks rule, and girls drule.
+                                This rubber maverick has eagerly awaited summer and is Ready
+                                to quack some code. Are you ready for a quacktastic summer!?! #QuackinCool
+                            </p>
+                            <a href="" class="hero-store-button">Let`s swim</a>
+                        </div>
+                        <img src="../assets/cool-duck-display.png">
+                    </div>
+                    <div class="swiper-slide flex-center">
+                        <div class="swiper-info flex-col">
+                            <h1>DUCKTASTIC SUPRISE!</h1>
+                            <p>
+                                Introducing Joe Duck - not the flashiest, but still the quackiest.
+                                Behind the average looking exterior, lays a coding virtuoso,
+                                ready to debug the hardest of problems. 
+                                Bath time will never become a coding adventure without this code quacker!! #QuackSmartNotHard
+                            </p>
+                            <a href="" class="hero-store-button">Let`s swim</a>
+                        </div>
+                        <img src="../assets/typical duck.webp">
+                    </div>
+                    <div class="swiper-slide flex-center">
+                        <div class="swiper-info flex-col">
+                            <h1>A DUCKING PRESIDENT!</h1>
+                            <p>
+                                Meet President Quack, not the fanciest feathers, 
+                                but behind that rubbery exterior is a leader quacking with wisdom. 
+                                Leading the nation of bath time with diplomacy and bubbles, 
+                                President Quack is ready to make bath time great again!
+                                 🦆🇺🇸 #MakeQuackingGreatAgain
+                            </p>
+                            <a href="" class="hero-store-button">Let`s swim</a>
+                        </div>
+                        <img src="../assets/quackatician.webp">
+                    </div>
+                    <div class="swiper-slide flex-center">
+                        <div class="swiper-info flex-col">
+                            <h1>THE DUCKFATHER!</h1>
+                            <p>
+                                Meet the Duckfather – not the duck you want to mess with.
+                                This duck is known for his bathtime antics.
+                                He is a mastermind, carefully plotting his next quack. 
+                                The Duckfather will rule the tub with an iron beak, so you better follow his rules.
+                                #TheDuckFather
+                            </p>
+                            <a href="" class="hero-store-button">Let`s swim</a>
+                        </div>
+                        <img src="../assets/quackster.jpg">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </header>
     </body>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../src/navbar.js" ></script> 
+    <script src="../src//home/hero.js"></script>
 </html>

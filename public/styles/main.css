@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 :root {
-    --primary-color: #000;
-    --secondary-color:  	#8ee4f0;
+    --primary-color: #f9de06;
+    --secondary-color:#8ee4f0;
 
     --navbutton-primary: #fff;
 
@@ -13,6 +14,9 @@
     --hover-color: #000;
     --border-color: #000;
 
+    --button-border-color: rgb(255 209 98);
+    --button-color: rgb(26 28 60);
+    
     --error-color: #000;
     --success-color: #000;
     --warning-color: #000;
@@ -26,10 +30,7 @@
 }
 
 body {
-    height: 5000px;
-
     font-family: "Sixtyfour", sans-serif;
-
 }
 
 a, li {
