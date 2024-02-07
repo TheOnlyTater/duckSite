@@ -1,0 +1,120 @@
+.store {
+  background-color: #2bf;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.store-waves {
+  background-color: #2bf;
+  height: 200px;
+  position: absolute;
+}
+
+.store-waves .waves {
+  height: 40px;
+}
+
+.store-info {
+  background-color: var(--primary-color);
+  z-index: 2;
+  border-radius: 5px;
+  gap: 2em;
+  max-width: 500px;
+  margin: 0 2em;
+  padding: 2.5em;
+}
+
+.store-card-container {
+  z-index: 2;
+  flex-wrap: wrap;
+  gap: 6em;
+  max-width: 800px;
+  margin: 1em;
+  display: flex;
+}
+
+.store-card-container > div > p {
+  position: absolute;
+  top: 2.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.store-card-container > div {
+  color: #fff;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  width: 200px;
+  height: 250px;
+  transition: all .4s;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px 7px #00000040, -5px -5px 30px 7px #00000038;
+}
+
+.store-card-container > div:first-child {
+  background-image: url("quackatician.ee280f74.jpg");
+}
+
+.store-card-container > div:nth-child(2) {
+  background-image: url("coffee-duck.5a12f8b9.jpg");
+}
+
+.store-card-container > div:nth-child(3) {
+  background-image: url("cool-duck-display.5228bbcb.png");
+}
+
+.store-card-container > div:nth-child(4) {
+  background-image: url("quackster.c89dd700.jpg");
+}
+
+.store-card-container > div:nth-child(5) {
+  background-image: url("typical duck.3edb8b07.webp");
+}
+
+.store-card-container > div:nth-child(6) {
+  background-image: url("duck-logo.a2603b4e.png");
+}
+
+.store-card-container > div:hover {
+  scale: .9;
+}
+
+@media screen and (width <= 1450px) {
+  .store-card-container > div {
+    width: 150px;
+    height: 200px;
+  }
+
+  .store-card-container {
+    gap: 2em;
+    max-width: 350px;
+  }
+}
+
+@media screen and (width <= 900px) {
+  .store {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .store-card-container, .store-info {
+    margin-top: 2em;
+  }
+
+  .store-card-container {
+    gap: 2em;
+    width: 100vw;
+    max-width: none;
+    margin: 2em;
+  }
+}
+
+/*# sourceMappingURL=index.bfadf2e6.css.map */

@@ -1,0 +1,103 @@
+@import "./main.css";
+
+.about-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b0082;
+}
+
+.about-info {
+    margin: 0 3rem;
+    padding: 3rem;
+    border-radius: 5px;
+
+    gap: 1.5em;
+    max-width: 800px;
+
+    background-color: var(--primary-color);
+    z-index: 2;
+}
+
+.about-waves {
+    height: 190px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+    rotate: 180deg;
+}
+
+.about-section > img {
+    position: absolute;
+    right: 300px;
+
+    transform: scaleX(-1);
+
+    width: 500px;
+    height: 500px;
+
+    animation: duck-swimming 5s linear infinite;
+}
+
+.bubble-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -50px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: .50;
+    width: 40px;
+    height: 40px;
+}
+.bubble-container > .bubble:nth-child(1) {
+    left: 350px;
+    animation: up 12s infinite;
+}
+.bubble-container > .bubble:nth-child(2) {
+    left: 750px;
+    opacity: .30;
+    animation: up 15s infinite;
+}
+.bubble-container > .bubble:nth-child(3) {
+    left: 1150px;
+    animation: up 16s infinite;
+}
+.bubble-container > .bubble:nth-child(4) {
+    left: 50px;
+    animation: up 14s infinite;
+}
+
+/* Bubbles Animation */
+@keyframes up {
+    100% {
+        transform: translateY(-105vh);
+      }
+  }
+
+@keyframes duck-swimming {
+    0% {
+        transform: translateY(0) scaleX(-1);
+    }
+    25% {
+        transform: translateY(-20px) scaleX(-1);
+    }
+    50% {
+        transform: translateY(0) scaleX(-1);
+    }
+    75% {
+        transform: translateY(40px) scaleX(-1);
+    }
+    100% {
+        transform: translateY(0) scaleX(-1);
+    }
+}

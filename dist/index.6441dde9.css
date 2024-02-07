@@ -25,6 +25,7 @@
 
 body {
   font-family: Sixtyfour, sans-serif;
+  overflow-x: hidden;
 }
 
 a, li {
