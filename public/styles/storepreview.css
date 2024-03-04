@@ -1,0 +1,130 @@
+@import './main.css';
+
+.main-store-preview {
+    width: 100vw;
+    position: relative;
+    height: fit-content;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 8em;
+
+    padding: 2em;
+    padding-bottom: 20em;
+    background-color: blue;
+}
+
+.store-island-element {
+    max-width: 550px;
+
+    gap: 2em;
+    padding: 2em;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    z-index: 2;
+}
+
+.store-display-items {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 2em;
+    z-index: 2;
+}
+
+.store-display-items > * {
+    width: 160px;
+    height: 220px;
+
+    position: relative;
+    padding:  6em;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    cursor: pointer;
+    overflow: hidden;
+    transition: .25s;
+    z-index: 2;
+}
+
+.store-display-items > * > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: .8;
+    transition: .5s;
+}
+
+.store-display-items p {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 155px;
+    text-align: center;
+    z-index: 1;
+}
+
+.store-display-items > *:hover, 
+.store-display-items > * > img:hover{
+    scale: 1.1;
+    opacity: 1;
+}
+
+.store-waves {
+    position: absolute;
+    bottom: 180px;
+}
+
+@media screen and (max-width: 1300px) {
+    .main-store-preview {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .store-island-element {
+        max-width: none;
+        width: 100%;
+
+        padding: 0;
+
+        align-items: center;
+
+        border-radius: 0;
+        border: none;
+    }
+
+    .store-waves {
+        bottom: 140px;
+    }
+
+    .store-display-items {
+        height: 900px;
+        
+        position: relative;
+        right: 32%;
+        transform: translate(50%);
+
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .store-display-items > *:nth-child(4) {
+        display: none;
+    }
+    .store-display-items > *:nth-child(5) {
+        display: none;
+    }
+    .store-display-items > *:last-child {
+        display: none;
+    }
+}

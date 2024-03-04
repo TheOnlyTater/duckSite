@@ -1,0 +1,46 @@
+.checkout {
+  justify-content: space-evenly;
+}
+
+.checkout-user-info {
+  border: 1px solid #000;
+  width: 400px;
+  padding: 1em;
+}
+
+.checkout-user-info > form {
+  flex-direction: column;
+  gap: 2em;
+  display: flex;
+}
+
+.checkout-user-info > form > * {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+}
+
+.checkout-product-info {
+  flex-direction: column;
+  display: flex;
+}
+
+.product-container {
+  border: 1px solid #000;
+  justify-content: space-between;
+  width: 400px;
+  height: 100px;
+  display: flex;
+}
+
+.product-container > img {
+  width: 100px;
+}
+
+.product-container > span {
+  align-items: center;
+  gap: 1em;
+  display: flex;
+}
+
+/*# sourceMappingURL=checkout.4e3c1de3.css.map */

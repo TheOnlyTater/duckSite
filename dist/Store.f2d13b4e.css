@@ -1,0 +1,51 @@
+.store-front-container {
+  color: #fff;
+  background-color: #000;
+  gap: 5em;
+  padding: 8em 2em;
+}
+
+.product-page-title {
+  text-align: center;
+}
+
+.product-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  display: flex;
+}
+
+.store-card {
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 350px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.store-card > h2 {
+  transition: all .5s;
+  position: relative;
+}
+
+.store-card:hover > h2, .store-card:active > h2 {
+  transform: translate(0, -80px);
+}
+
+.store-card > img {
+  filter: blur(2px);
+  transition: all .5s;
+  position: absolute;
+}
+
+.store-card:hover > img, .store-card:active > img {
+  filter: blur();
+  scale: 1.2;
+}
+
+/*# sourceMappingURL=Store.f2d13b4e.css.map */

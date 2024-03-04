@@ -1,6 +1,6 @@
-.about-section {
-  background-color: #0b0082;
-  justify-content: space-between;
+.main-about-section {
+  background-color: #00f;
+  justify-content: space-around;
   align-items: center;
   width: 100vw;
   height: 100vh;
@@ -8,94 +8,72 @@
   position: relative;
 }
 
-.about-info {
-  background-color: var(--primary-color);
+.about-info-island {
   z-index: 2;
+  border: 1px solid #000;
   border-radius: 5px;
-  gap: 1.5em;
-  max-width: 800px;
-  margin: 0 3rem;
-  padding: 3rem;
+  gap: 2.5em;
+  padding: 3em;
 }
 
-.about-waves {
-  height: 190px;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%)rotate3d(0, 0, 1, 180deg);
-}
-
-.about-section > img {
-  width: 500px;
-  height: 500px;
-  animation: 5s linear infinite duck-swimming;
-  position: absolute;
-  right: 300px;
+.main-about-section > img {
+  width: 600px;
+  height: 600px;
+  animation: 3s linear infinite duck-animation;
   transform: scaleX(-1);
 }
 
-.bubble-container {
-  width: 100vw;
-  height: 100vh;
+.about-waves {
+  width: 100%;
+  height: 200px;
   position: absolute;
+  top: 0;
+  left: 50%;
+  transform: scaleY(-1)translate(-50%);
 }
 
-.bubble {
-  opacity: .5;
-  background-color: #fff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  bottom: -50px;
-}
-
-.bubble-container > .bubble:first-child {
-  animation: 12s infinite up;
-  left: 350px;
-}
-
-.bubble-container > .bubble:nth-child(2) {
-  opacity: .3;
-  animation: 15s infinite up;
-  left: 750px;
-}
-
-.bubble-container > .bubble:nth-child(3) {
-  animation: 16s infinite up;
-  left: 1150px;
-}
-
-.bubble-container > .bubble:nth-child(4) {
-  animation: 14s infinite up;
-  left: 50px;
-}
-
-@keyframes up {
-  100% {
-    transform: translateY(-105vh);
+@media screen and (width <= 1300px) {
+  .about-waves {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: scaleY(-1)translate(-50%);
   }
 }
 
-@keyframes duck-swimming {
-  0% {
-    transform: translateY(0)scaleX(-1);
+@media screen and (width <= 800px) {
+  .main-about-section {
+    flex-direction: column;
+    justify-content: center;
+    height: 1000px;
+  }
+
+  .about-info-island {
+    background-color: #fff;
+    border: none;
+  }
+
+  .main-about-section > img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 100px;
+  }
+}
+
+@keyframes duck-animation {
+  0%, 50%, 100% {
+    rotate: none;
   }
 
   25% {
-    transform: translateY(-20px)scaleX(-1);
-  }
-
-  50% {
-    transform: translateY(0)scaleX(-1);
+    rotate: 5deg;
   }
 
   75% {
-    transform: translateY(40px)scaleX(-1);
-  }
-
-  100% {
-    transform: translateY(0)scaleX(-1);
+    rotate: -5deg;
   }
 }
 

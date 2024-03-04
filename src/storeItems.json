@@ -1,0 +1,50 @@
+[
+    {
+        "category": "cool duck",
+        "name" : "543",
+        "price" : 453.65,
+        "description" : "dasdasdsadasdasd",
+        "images" : ["/quackatician.ee280f74.jpg", "img2", "img3"],
+
+        "length": 21,
+        "width": 21,
+        "height": 21,
+        "weight": 21
+    },
+    {
+        "category": "cool duck",
+        "name" : "543",
+        "price" : 453.65,
+        "description" : "dasdasdsadasdasd",
+        "images" : ["/quackatician.ee280f74.jpg", "img2", "img3"],
+
+        "length": 21,
+        "width": 21,
+        "height": 21,
+        "weight": 21
+    },
+    {
+        "category": "cool duck",
+        "name" : "543",
+        "price" : 453.65,
+        "description" : "dasdasdsadasdasd",
+        "images" : ["/quackatician.ee280f74.jpg", "img2", "img3"],
+
+        "length": 21,
+        "width": 21,
+        "height": 21,
+        "weight": 21
+    },
+    {
+        "category": "cool duck",
+        "name" : "543",
+        "price" : 453.65,
+        "description" : "dasdasdsadasdasd",
+        "images" : ["/quackatician.ee280f74.jpg", "img2", "img3"],
+
+        "length": 21,
+        "width": 21,
+        "height": 21,
+        "weight": 21
+    }
+]

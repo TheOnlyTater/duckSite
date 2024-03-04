@@ -32,9 +32,30 @@
 body {
     font-family: "Sixtyfour", sans-serif;
     overflow-x: hidden;
+    width: 100vw;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 a, li {
     list-style-type: none;
     text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 500;
 }

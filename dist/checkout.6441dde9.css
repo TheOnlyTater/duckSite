@@ -1,0 +1,57 @@
+@import "https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Anton&display=swap";
+:root {
+  --primary-color: #f9de06;
+  --secondary-color: #8ee4f0;
+  --navbutton-primary: #fff;
+  --background-color: #000;
+  --text-color: #000;
+  --link-color: #000;
+  --hover-color: #000;
+  --border-color: #000;
+  --button-border-color: #ffd162;
+  --button-color: #1a1c3c;
+  --error-color: #000;
+  --success-color: #000;
+  --warning-color: #000;
+  --info-color: #121212;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  font-family: Sixtyfour, sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+a, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=checkout.6441dde9.css.map */

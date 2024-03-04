@@ -7,40 +7,44 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/navbar.css">
-        <link rel="stylesheet" href="./styles/hero.css">
-        <link rel="stylesheet" href="./styles/helperStyles.css">
-        <link rel="stylesheet" href="./styles/storeInfo.css">
-        <link rel="stylesheet" href="./styles/about.css">
         <link rel="stylesheet" href="./styles/footer.css">
+
+        <link rel="stylesheet" href="./styles/hero.css">
+        <link rel="stylesheet" href="./styles/storepreview.css">
+        <link rel="stylesheet" href="./styles/about.css">
+
+        <link rel="stylesheet" href="./styles/helperStyles.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/Buttons.css">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
     <body>
         <div class="navbar" id="navbar-element">
-            <a>
+            <a href="./index.html">
                 <img class="navbar-logo" src="../assets/duck-logo.png" alt="logo">
             </a>
             <nav>
                 <ul>
                     <li class="navbar-button">
-                        <a href="">
+                        <a href="./index.html">
                             HOME
                         </a>
                         <img src="../assets/button-duck.svg">
                     </li>
                     <li  class="navbar-button">
-                        <a href="">
-                            ABOUT US
-                        </a>
-                        <img src="../assets/button-duck.svg">
-                    </li>
-                    <li  class="navbar-button">
-                        <a href="./storefront.html">
+                        <a href="./Store.html">
                             STORE
                         </a>
                         <img src="../assets/button-duck.svg">
+                    </li>
+                    <li  class="navbar-button user-bag">
+                        <a href="./checkout.html">
+                            <img src="../assets/store-bag-icon.svg" alt="">
+                            <span id="bag-item-counter">
+                            </span>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -59,163 +63,195 @@
                 </svg>
             </div>
         </div>
-        <header class="hero">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide flex-center">
-                        <div class="swiper-info flex-col">
-                            <h1>DUCKS RULE, GIRLS DRULE</h1>
-                            <p>
-                                Meet our Summer lover Ducky.
-                                The Duck behind why ducks rule, and girls drule.
-                                This rubber maverick has eagerly awaited summer and is Ready
-                                to quack some code. Are you ready for a quacktastic summer!?! #QuackinCool
-                            </p>
-                            <a href="" class="hero-store-button">Let`s swim</a>
-                        </div>
-                        <img src="../assets/cool-duck-display.png">
-                    </div>
-                    <div class="swiper-slide flex-center">
-                        <div class="swiper-info flex-col">
-                            <h1>DUCKTASTIC SUPRISE!</h1>
-                            <p>
-                                Introducing Joe Duck - not the flashiest, but still the quackiest.
-                                Behind the average looking exterior, lays a coding virtuoso,
-                                ready to debug the hardest of problems. 
-                                Bath time will never become a coding adventure without this code quacker!! #QuackSmartNotHard
-                            </p>
-                            <a href="" class="hero-store-button">Let`s swim</a>
-                        </div>
-                        <img src="../assets/typical duck.webp">
-                    </div>
-                    <div class="swiper-slide flex-center">
-                        <div class="swiper-info flex-col">
-                            <h1>A DUCKING PRESIDENT!</h1>
-                            <p>
-                                Meet President Quack, not the fanciest feathers, 
-                                but behind that rubbery exterior is a leader quacking with wisdom. 
-                                Leading the nation of bath time with diplomacy and bubbles, 
-                                President Quack is ready to make bath time great again!
-                                 🦆🇺🇸 #MakeQuackingGreatAgain
-                            </p>
-                            <a href="" class="hero-store-button">Let`s swim</a>
-                        </div>
+        <main>
+            <header class="make-relative">
+                <div class="mySwiper make-full-size">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide flex-center make-relative">
+                            <div class="swiper-island-element flex-col">
+                                <h1>DUCKS RULE, GIRLS DRULE</h1>
+                                <p>
+                                    Meet our Summer lover Ducky.
+                                    The Duck behind why ducks rule, and girls drule.
+                                    This rubber maverick has eagerly awaited summer and is Ready
+                                    to quack some code. Are you ready for a quacktastic summer!?! #QuackinCool
+                                </p>
+                                <a href="" class="duck-linking-button">Let`s swim</a>
+                            </div>
+                            <img src="../assets/cool-duck-display.png">
+                        </li>
+                        <li class="swiper-slide flex-center make-relative">
+                            <div class="swiper-island-element flex-col">
+                                <h1>DUCKTASTIC SUPRISE!</h1>
+                                <p>
+                                    Introducing Joe Duck - not the flashiest, but still the quackiest.
+                                    Behind the average looking exterior, lays a coding virtuoso,
+                                    ready to debug the hardest of problems. 
+                                    Bath time will never become a coding adventure without this code quacker!! #QuackSmartNotHard
+                                </p>
+                                <a href="" class="duck-linking-button">Let`s swim</a>
+                            </div>
+                            <img src="../assets/typical duck.webp">
+                        </li>
+                        <li class="swiper-slide flex-center make-relative">
+                            <div class="swiper-island-element flex-col">
+                                <h1>A DUCKING PRESIDENT!</h1>
+                                <p>
+                                    Meet President Quack, not the fanciest feathers, 
+                                    but behind that rubbery exterior is a leader quacking with wisdom. 
+                                    Leading the nation of bath time with diplomacy and bubbles, 
+                                    President Quack is ready to make bath time great again!
+                                     🦆🇺🇸 #MakeQuackingGreatAgain
+                                </p>
+                                <a href="" class="duck-linking-button">Let`s swim</a>
+                            </div>
+                            <img src="../assets/quackatician.jpg">
+                        </li>
+                        <li class="swiper-slide flex-center make-relative">
+                            <div class="swiper-island-element flex-col">
+                                <h1>THE DUCKFATHER!</h1>
+                                <p>
+                                    Meet the Duckfather – not the duck you want to mess with.
+                                    This duck is known for his bathtime antics.
+                                    He is a mastermind, carefully plotting his next quack. 
+                                    The Duckfather will rule the tub with an iron beak, so you better follow his rules.
+                                    #TheDuckFather
+                                </p>
+                                <a href="" class="duck-linking-button">Let`s swim</a>
+                            </div>
+                            <img src="../assets/quackster.jpg">
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </header>
+            <section class="main-store-preview">
+                <div class="store-island-element flex-col">
+                    <h1>CHECK OUT SOME OF OUR DUCKS</h1>
+                    <p>
+                        Quack-tastic companions for your every mood! From the Quackfather,
+                        a coding genius in disguise, to the Rubber Maestro, 
+                        each duck has a story to tell.
+                        Dive into bath-time adventures with our quirky flock.
+                    </p>
+                    <a href="" class="duck-linking-button">See more</a>
+                </div>
+                <div class="store-display-items">
+                    <a>
+                        <p>DONALD DUCK</p>
                         <img src="../assets/quackatician.jpg">
-                    </div>
-                    <div class="swiper-slide flex-center">
-                        <div class="swiper-info flex-col">
-                            <h1>THE DUCKFATHER!</h1>
-                            <p>
-                                Meet the Duckfather – not the duck you want to mess with.
-                                This duck is known for his bathtime antics.
-                                He is a mastermind, carefully plotting his next quack. 
-                                The Duckfather will rule the tub with an iron beak, so you better follow his rules.
-                                #TheDuckFather
-                            </p>
-                            <a href="" class="hero-store-button">Let`s swim</a>
-                        </div>
+                    </a>
+                    <a>
+                        <p>TRUCK</p>
+                    </a>
+                    <a>
+                        <p>KYLE</p>
+                        <img src="../assets/cool-duck-display.png">
+                    </a>
+                    <a>
+                        <p>GEORGY</p>
                         <img src="../assets/quackster.jpg">
-                    </div>
+                    </a>
+                    <a>
+                        <p>JEFF</p>
+                        <img src="../assets/typical duck.webp">
+                    </a>
+                    <a>
+                        <p>TEMP</p>
+                    </a>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </header>
-        <section class="store">
-            <div class="store-info flex-col">
-                <h1>CHECK OUT SOME OF OUR DUCKS</h1>
-                <p>
-                    Quack-tastic companions for your every mood! From the Quackfather,
-                     a coding genius in disguise, to the Rubber Maestro, 
-                     each duck has a story to tell.
-                     Dive into bath-time adventures with our quirky flock.
-                </p>
-                <a href="" class="hero-store-button">See more</a>
-            </div>
-            <div class="store-card-container">
-                <div>
-                    <p>DONALD DUCK</p>
+
+                <!-- WAVE ANIMATION -->
+                <div class="wave-parent store-waves">
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                        </g>
+                    </svg>
                 </div>
-                <div>
-                    <p>TRUCK</p>
+            </section>
+            <section class="main-about-section">
+                <div class="about-info-island flex-col">
+                    <h1>WHY THE DUCKS?</h1>
+                    <p>
+                        WE LOVE DUCKS
+                    </p>
+                    <a href="" class="duck-linking-button">GET SOME DUCKS</a>
                 </div>
-                <div>
-                    <p>KYLE</p>
+                <div></div>
+                <!-- WAVE ANIMATION -->
+                <div class="wave-parent about-waves">
+                    <svg 
+                        class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"
+                    >
+                        <defs>
+                            <path 
+                                id="gentle-wave" 
+                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" 
+                            />
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                        </g>
+                    </svg>
                 </div>
-                <div>
-                    <p>GEORGY</p>
+                <!-- DUCK ANIMATION -->
+                <img src="../assets/button-duck.svg">
+                <!-- BUBBLE ANIMATION -->
+                <div class="bubble-container">
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
                 </div>
-                <div>
-                    <p>JEFF</p>
-                </div>
-                <div>
-                    <p>TEMP</p>
-                </div>
-            </div>
-            <div class="wave-parent store-waves">
-                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                    <defs>
-                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                    </defs>
-                    <g class="parallax">
-                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                    </g>
-                </svg>
-            </div>
-        </section>
-        <section class="about-section">
-            <div class="about-info flex-col">
-                <h1>WHY THE DUCKS?</h1>
-                <p>
-                    WE LOVE DUCKS
-                </p>
-                <a href="" class="hero-store-button">GET SOME DUCKS</a>
-            </div>
-            <div></div>
-            <div class="wave-parent about-waves">
-                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                    <defs>
-                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                    </defs>
-                    <g class="parallax">
-                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                    </g>
-                </svg>
-            </div>
-            <img src="../assets/button-duck.svg">
-            <div class="bubble-container">
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-            </div>
-        </section>
+            </section>
+        </main>
         <footer>
-            <div>
-                <nav>
+            <nav class="website-footer-links">
+                <ul class="flex-col">
+                    <li>
+                        <a href="">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="./Store.html">STORE</a>
+                    </li>
+                    <li>
+                        <a href="">TOS</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="website-external-links flex-col">
+                <li>
                     <a href="">HOME</a>
+                </li>
+                <li>
                     <a href="">ABOUT</a>
-                    <a href="./storefront.html">STORE</a>
+                </li>
+                <li>
+                    <a href="./Store.html">STORE</a>
+                </li>
+                <li>
                     <a href="">TOS</a>
-                </nav>
-            </div>
-            <div>
-                <a href="">HOME</a>
-                <a href="">HOME</a>
-                <a href="">HOME</a>
-                <a href="">HOME</a>
-            </div>
+                </li>
+            </ul>
             <p>@copyright my ass</p>
         </footer>
     </body>
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../src/navbar.js" ></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../src/navbar.js" type="module" ></script> 
     <script src="../src//home/hero.js"></script>
 </html>

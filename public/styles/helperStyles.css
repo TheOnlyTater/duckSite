@@ -1,3 +1,14 @@
+/*
+    positioning
+*/
+
+.make-relative {
+    position: relative;
+}
+
+/*
+    flex
+*/
 .flex-center {
     display: flex !important;
     align-items: center;
@@ -9,6 +20,34 @@
     flex-direction: column;
 }
 
+
 .hidden {
     display: none !important;
+}
+
+/*
+    sizing
+*/
+.make-full-size {
+    width: 100%;
+    height: 100%;
+}
+
+.inline-section {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.section-inline p span{
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.full-width {
+    width: 100%;
 }

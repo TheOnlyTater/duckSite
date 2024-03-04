@@ -1,93 +1,42 @@
 @import './main.css';
 
-.hero {
-    height: 100vh;
-    width: 100vw;
+header {
+	width: 100vw;
+	height: 100vh;
+
+	background-color: white;
 }
 
-.swiper {
-	width: 100%;
-	height: 100%;
-}
-
-.swiper-slide {
-	position: relative;
-}
-.swiper-slide > img {
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-}
-
-.swiper-info {
+.swiper-island-element {
 	position: absolute;
 	top: 20%;
 	left: 5%;
 
 	gap: 2em;
 
-	background-color: var(--primary-color);
+	background-color: white;
 	border-radius: 5px;
 
-	padding: 2.5em;
+	padding:1.5em;
 	max-width: 500px;
 }
-
-
-.swiper-info > p {
-	font-size: 14px;
-	font-weight: 500;
-}
-
-
-.hero-store-button {
-	display: block;
-	position: relative;
-	overflow: hidden;
-	width: 360px;
-	
-	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='50' height='53'%3E%3Cpath d='M0 0 C4.5919256 2.39578727 5.8512743 5.66207531 7.88671875 10.16015625 C9.60699146 13.00313326 11.96297288 13.8956265 15 15 C14.75 16.875 14.75 16.875 14 19 C11.04454879 21.11103658 8.56144099 21.19785783 5 21 C5.33 21.70125 5.66 22.4025 6 23.125 C7.14498919 26.41684393 7.42417325 28.53591842 7 32 C4.96006092 35.6578218 3.49580738 37.66946174 0 40 C-4.24116129 41.1848084 -8.50191238 41.183413 -12.875 41.1875 C-13.89787109 41.20586914 -13.89787109 41.20586914 -14.94140625 41.22460938 C-20.31383828 41.23995918 -25.65881256 40.9354438 -29.9609375 37.37890625 C-30.42757813 36.77949219 -30.89421875 36.18007813 -31.375 35.5625 C-31.85710938 34.96566406 -32.33921875 34.36882813 -32.8359375 33.75390625 C-35.19360217 30.20158599 -35.13497327 27.01390689 -35.125 22.875 C-35.12757812 21.79992187 -35.13015625 20.72484375 -35.1328125 19.6171875 C-35 17 -35 17 -34 16 C-28.49356124 15.57642779 -23.34114269 16.81777079 -18 18 C-18.20625 17.13375 -18.4125 16.2675 -18.625 15.375 C-19.05705148 11.48653668 -18.65292453 9.53124786 -17 6 C-11.64908516 -0.0197792 -7.86691301 -0.8575308 0 0 Z M-13 7 C-8.05 7 -3.1 7 2 7 C-1.39873766 3.52083413 -1.39873766 3.52083413 -5.875 2.6875 C-9.56800843 2.72369138 -9.56800843 2.72369138 -13 7 Z M0 8 C-0.33 9.65 -0.66 11.3 -1 13 C-2.9375 12.6875 -2.9375 12.6875 -5 12 C-5.33 11.01 -5.66 10.02 -6 9 C-10.65052872 8.73067479 -10.65052872 8.73067479 -15 10 C-15.19834137 14.26433935 -14.68610848 17.10336348 -13 21 C-19.70518586 21.19818283 -25.65176798 21.30844801 -32 19 C-32.34765664 25.72136176 -31.7560069 29.93652782 -27.07421875 35.140625 C-22.48105105 37.91870356 -18.26555389 37.58270503 -13 37.5 C-12.01515625 37.51546875 -11.0303125 37.5309375 -10.015625 37.546875 C-5.59239197 37.52296563 -2.74694436 37.4191752 1.16015625 35.2265625 C3.14504323 32.82446997 3.6177957 31.93421089 3.4375 28.875 C3.40668747 24.99114614 3.40668747 24.99114614 1 23 C1.3057687 20.70673473 1.90427145 19.15422933 3.125 17.1875 C4.41487498 13.96281256 3.64266804 11.34187382 3 8 C2.01 8 1.02 8 0 8 Z M7 16 C6.67 16.66 6.34 17.32 6 18 C6.99 17.67 7.98 17.34 9 17 C8.34 16.67 7.68 16.34 7 16 Z ' fill='%23000000' transform='translate(35,8)'/%3E%3Cpath d='M0 0 C3.11743233 1.50098594 6.15501823 3.02431822 9 5 C9 5.99 9 6.98 9 8 C4.96825194 7.72510809 3.43105369 7.46508424 0.625 4.4375 C-0.179375 3.2309375 -0.179375 3.2309375 -1 2 C-0.67 1.34 -0.34 0.68 0 0 Z ' fill='%23000000' transform='translate(8,34)'/%3E%3Cpath d='M0 0 C0.99 0 1.98 0 3 0 C3 0.99 3 1.98 3 3 C2.01 3.33 1.02 3.66 0 4 C0 2.68 0 1.36 0 0 Z ' fill='%23000000' transform='translate(20,39)'/%3E%3C/svg%3E%0A"),
-	url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' standalone='no'?%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 20010904//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'%3E%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='35.000000pt' height='37.000000pt' viewBox='0 0 50.000000 53.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cmetadata%3E Created by potrace 1.16, written by Peter Selinger 2001-2019 %3C/metadata%3E%3Cg transform='translate(0.000000,53.000000) scale(0.100000,-0.100000)' fill='%23000000' stroke='none'%3E%3Cpath d='M229 435 c-14 -8 -34 -26 -43 -40 -18 -27 -24 -104 -10 -126 8 -13 -51 -6 -98 12 -14 6 -37 9 -50 7 -22 -3 -23 -7 -23 -75 0 -77 13 -106 69 -147 24 -18 42 -21 145 -21 130 0 157 10 187 66 15 30 15 56 -1 107 -6 18 -4 22 14 22 30 0 81 28 81 43 0 7 -16 21 -35 30 -25 12 -40 29 -51 57 -23 56 -56 80 -113 80 -25 -1 -58 -7 -72 -15z m110 -30 c50 -25 65 -112 25 -146 -18 -15 -18 -33 1 -49 9 -7 15 -29 15 -50 0 -30 -6 -43 -26 -59 -23 -18 -41 -21 -134 -21 -121 0 -150 12 -176 76 -13 30 -20 104 -10 104 2 0 20 -7 39 -15 41 -17 143 -20 152 -5 4 6 0 22 -9 35 -25 38 -20 79 13 114 32 35 65 40 110 16z'/%3E%3C/g%3E%3C/svg%3E");
-
-	background-repeat: no-repeat;
-	background-position: calc(0% - 100px), calc(100% - 12px);
-	background-color: var(--button-border-color);
-	white-space: nowrap;
-
-  	color: var(--dark-navy);
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-
-	font-size: 14px;
-	text-align: center;
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
-	font-weight: 700;
-
- 	cursor: pointer;
-	border: 2px solid var(--button-border-color);
-	padding: 14px 14px;
-  	transition: background-position 1.5s ease;
-}
-
-.hero-store-button:hover,
-.hero-store-button:focus {
-	background-position: calc(25% - 50px), calc(100% + 100px);
-}
-
 
 @media screen and (max-width: 800px) {
 	.swiper-slide {
 		flex-direction: column;
+		justify-content: space-around !important;
 	}
 
-	.swiper-info {
-		position: relative;
-		top: 0;
-		left: 0;
-
+	.swiper-island-element {
+		position:static;
 		max-width: none;
-		width: 100%;
 
-		padding-top: 8rem;
+		align-items: center;
+
+		padding-top: 7.5em;
+	}
+
+	.swiper-island-element > p {
+		width: 90%;
 	}
 }

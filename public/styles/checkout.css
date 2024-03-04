@@ -1,0 +1,51 @@
+.checkout {
+    justify-content: space-evenly;
+}
+
+.checkout-user-info {
+    padding: 1em;
+    width: 400px;
+    border: 1px solid black;
+}
+
+.checkout-user-info > form {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+}
+
+.checkout-user-info > form > * {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*
+    pricing island
+*/
+
+.checkout-product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-container {
+    width: 400px;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid black;
+}
+
+.product-container > img {
+    width: 100px;
+}
+
+.product-container > span {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
