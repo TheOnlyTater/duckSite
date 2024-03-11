@@ -1,4 +1,4 @@
-@import './main.css';
+@import './../main.css';
 
 .store-front-container {
     padding: 8em 2em;
@@ -36,14 +36,21 @@
     overflow: hidden;
 }
 
-.store-card > h2 {
+.store-card > div {
     position: relative;
+    text-align: center;
+
     transition: .5s;
-}
-.store-card:hover > h2,
-.store-card:active > h2{
-    scale: 1.1;
     transform: translate(0, -80px);
+    color: blue;
+}
+.store-card > div > h2 {
+    transition: .5s;
+    font-size: 28px;
+}
+.store-card:hover > div>h2,
+.store-card:active > div>h2{
+    scale: 1.2;
 }
 
 .store-card > img {

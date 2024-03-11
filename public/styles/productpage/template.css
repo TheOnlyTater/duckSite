@@ -1,4 +1,4 @@
-@import './main.css';
+@import './../main.css';
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
 [type="radio"]:checked,
@@ -16,6 +16,7 @@
 
     width: 100vw;
     height: 100vh;
+    min-height: 900px;
 
     font-family: poppins;
     line-height: 1.2;

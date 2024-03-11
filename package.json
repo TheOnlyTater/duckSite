@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start" : "parcel ./public/*.html",
-    "build" : "parcel build ./src/*.html",
+    "start": "parcel ./public/*.html",
+    "build": "parcel build ./src/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.11.0"
+    "parcel": "^2.12.0"
   }
 }

@@ -4,7 +4,7 @@
 
 .checkout-user-info {
   border: 1px solid #000;
-  width: 400px;
+  width: 420px;
   padding: 1em;
 }
 
@@ -18,6 +18,19 @@
   flex-wrap: wrap;
   width: 100%;
   display: flex;
+}
+
+.input-parent {
+  justify-content: space-between;
+  display: flex;
+}
+
+.user-input > input {
+  width: 100%;
+}
+
+.user-input > b {
+  font-size: 12px;
 }
 
 .checkout-product-info {
@@ -39,8 +52,21 @@
 
 .product-container > span {
   align-items: center;
-  gap: 1em;
   display: flex;
 }
 
+.custom-input {
+  color: #fff;
+  background: #000;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: .4em;
+  transition: all .5s;
+}
+
+.custom-input:focus {
+  color: #000;
+  background: #fff;
+}
 /*# sourceMappingURL=checkout.4e3c1de3.css.map */

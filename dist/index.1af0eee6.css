@@ -1,0 +1,44 @@
+.about-section {
+  background-color: #00f;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2em;
+  min-height: 800px;
+  display: flex;
+  position: relative;
+}
+
+.about-section > img {
+  width: 30vw;
+  min-width: 200px;
+  height: 30vw;
+  min-height: 200px;
+  animation: 3s linear infinite duck-animation;
+  transform: scaleX(-1);
+}
+
+@media screen and (width <= 800px) {
+  .about-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-section .info-island {
+    max-width: 500px;
+  }
+}
+
+@keyframes duck-animation {
+  0%, 50%, 100% {
+    rotate: none;
+  }
+
+  25% {
+    rotate: 5deg;
+  }
+
+  75% {
+    rotate: -5deg;
+  }
+}
+/*# sourceMappingURL=index.1af0eee6.css.map */

@@ -8,176 +8,240 @@
     position: fixed;
     width: 100vw;
 
-    padding: .5em;
-
     display: flex;
-    align-items: center;
     justify-content: space-between;
-
-    background-color: var(--secondary-color);
-    overflow: hidden;
-    z-index: 9999999;
-}
-
-.user-bag {
-    position: relative;
-    display: flex;
     align-items: center;
-    justify-content: center;
-}
-.user-bag  img {
-    display: block !important;
-    width: 60px;
-    height: 60px;
-}
 
-.user-bag span {
-    position: absolute;
-    bottom: -2px;
-    left: 4px;
+    padding: 1em;
 
-    display: grid;
-    place-items: center;
-
-    width: 35px;
-    height: 35px;
-
-    font-size: 14px;
-
-    border-radius: 50%;
-    background-color: red;
+    background-color: black;
+    z-index: 9999;
 }
 
-.navbar > * {
-    margin: 0 3em;
-}
 
 .navbar-logo {
-    height: 3em;
+    display: block;
+    position:relative;
+    z-index: 5;
 }
-
-.navbar ul {
-    display: flex;
-    gap: 3em;
-}
-
-.navbar > nav {
+.nav-quick-links {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    gap: 1em;
+
 }
+
+/*
+ * NAVBAR IMAGE SETTINGS 
+ */
+.navbar img {
+    width: 40px;
+    height: 40px;
+}
+
+
+#traveling-duck {
+    position: absolute;
+    left: 20%;
+}
+
+/*
+* NAVBAR BUTTON ELEMENT
+*/
 
 .navbar-button {
     position: relative;
-    padding: 1em;
 }
 
-.navbar-button a {
+.navbar-button > a {
+    color: white;
+}
+
+.navbar-button > img {
+    display: none;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-button:hover > img {
+    display: block;
+    position: absolute;
+    
+    top: -10px;
+    left: 40%;
+    z-index: 5;
+
+    animation: duck-pop-up .5s linear forwards;
+}
+
+/*
+*   DUCK ANIMATION
+*/
+
+@keyframes duck-pop-up {
+    0% {
+        transform: scale(0) rotate(-500deg);
+    }
+    75% {
+      transform: scale(1.1) rotate(30deg);
+    }
+    100% {
+        transform: scale(1) rotate(50deg);
+    }
+}
+
+/* 
+ * NAVBAR BURGER MENU 
+ */
+
+.burger-menu {
+    display: block;
+    width: 40px;
+    height: 20px;
+}
+
+.burger-icon {
+    display: none;
     position: relative;
-    width: 100%;
-    height: 100%;
 
-    z-index: 3;
+    width: 40px;
+    height: 20px;
+
+    cursor: pointer;
+    z-index: 10;
 }
 
-.navbar-button img {
+.burger-icon > span {
+    position: absolute;
+    left: 0;
+
+    height: 4px;
+    width: 100%;
+
+    border-radius: 10px;
+    background-color: white;
+
+    transition: all .3s ease;
+}
+
+.burger-icon span:first-child {
+    top: 0;
+}
+
+.burger-icon span:nth-child(2) {
+    top: 10px;
+}
+
+.burger-icon span:nth-child(3) {
+    top: 20px;
+}
+.burger-icon-active span {
+    background-color: black;
+}
+.burger-icon-active span:nth-child(2) {
     display: none;
 }
-
-.navbar-button:hover img {
-    position: absolute;
-    top: -10px;
-    display: inline;
-    
-    width: 80%;
-    height: 4em;
-
-    rotate: 30deg;
-    animation: duck-button-appear 1s ease-in;
-    z-index: 2;
+.burger-icon-active span:nth-child(3) {
+    rotate: 45deg;
+    top: 0;
+}
+.burger-icon-active span:first-child {
+    rotate: -45deg;
 }
 
-.hide-navbar {
-    animation: move-up 2s linear 2s 1 forwards;
+.burger-menu-options {
+    display: none;
+    width: 100vw;
 }
 
-@keyframes duck-button-appear {
-    0% {
-        scale: 0;
-        bottom: 0;
+.burger-menu-options > ul {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+@media screen and (max-width: 900px) {
+    .burger-icon {
+        display: block;
     }
-    70% {
-        scale: 1;
-        rotate: 3deg;
-        top: -10px;
+
+    .navbar-button {
+        display: none;
     }
-    90% {
-        scale: 1.3;
-    }
+}
+
+.burger-in-focus {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+
+    background-color: rgba(255, 255, 255, 0.75);
+    overflow: hidden;
+
+    z-index: 99999;
+}
+
+.hamburger-menu-button {
+    width: 50vw;
+    min-width: 300px;
+    height: 25vw;
+    min-height: 150px;
+
+
+    border: 2px dashed black;
+    background-color: white;
+    transition: .25s;
+}
+
+.hamburger-menu-button a {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    display: block;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+.hamburger-menu-button:last-child a {
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/store-bag-icon.svg');
+}
+.hamburger-menu-button:last-child a:hover {
+    background-image: url('../../assets/white-store-bag-icon.png');
+}
+
+.hamburger-menu-button:hover,
+.hamburger-menu-button:hover a {
+    background-color: black;
+    color: white;
 }
 
 
 /* NAVBAR HIDE ANIMATION */
-.wave-parent {
+.waves-container {
     position: absolute;
-    bottom: -20px;
-    right: -55%;
-    transform: translate(-50%, 0);
-}
+    left: 0;
+    bottom: 0;
 
-.waves {
-    position: relative;
-    width: 105vw;
-    height:4vh;
-    margin-bottom:-7px; /*Fix for safari gap*/
-    max-height:150px;
-    animation: 1s linear wave-transformation forwards;
-
-}
-  
-/* Animation */
-  
-.parallax > use {
-    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-}
-.parallax > use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s;
-}
-.parallax > use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
-}
-.parallax > use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
-}
-.parallax > use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s;
-}
-@keyframes move-forever {
-    0% {
-        transform: translate3d(-90px,0,0);
-    }
-    100% { 
-        transform: translate3d(85px,0,0);
-    }
-}
-
-@keyframes wave-transformation {
-    from {
-        transform: scaleY(1);
-    } to {
-        transform: scaleY(10);
-    }
-}
-
-@keyframes move-up {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-200px);
-    }
+    width: 100vw;
+    height: 76px;
+    
+    z-index: 4;
 }

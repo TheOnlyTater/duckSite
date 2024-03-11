@@ -28,13 +28,21 @@
   overflow: hidden;
 }
 
-.store-card > h2 {
+.store-card > div {
+  text-align: center;
+  color: #00f;
   transition: all .5s;
   position: relative;
+  transform: translate(0, -80px);
 }
 
-.store-card:hover > h2, .store-card:active > h2 {
-  transform: translate(0, -80px);
+.store-card > div > h2 {
+  font-size: 28px;
+  transition: all .5s;
+}
+
+.store-card:hover > div > h2, .store-card:active > div > h2 {
+  scale: 1.2;
 }
 
 .store-card > img {
@@ -47,5 +55,4 @@
   filter: blur();
   scale: 1.2;
 }
-
 /*# sourceMappingURL=Store.f2d13b4e.css.map */

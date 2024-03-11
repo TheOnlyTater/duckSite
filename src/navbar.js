@@ -1,33 +1,9 @@
 import './handlers/cartHandler';
 import { getItemCount, getItemTotal, getTotalItems } from './handlers/cartHandler';
 
-const navbar = document.getElementById('navbar-element');
 const navbar_bag = document.getElementById('bag-item-counter')
-const navbar_waves = document.getElementById('navbar-waves');
-let prevY = 0;
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    if (getTotalItems() > 0) {
-        navbar_bag.textContent = getTotalItems();
-    } else {
-        navbar_bag.classList.add('hidden');
-    }
-});
-
-document.addEventListener('scroll', (e) => {
-    const currY = window.scrollY;
-    if (currY > prevY)  {
-        navbar.classList.add('hide-navbar')
-        navbar_waves.classList.remove('hidden');
-    }
-    else {
-        navbar.classList.remove('hide-navbar');
-        navbar_waves.classList.add('hidden')
-    }
-
-    prevY = currY
-});
+const burger_menu = document.getElementById('burger-menu')
+const burger_menu_nav = document.getElementById('burger-menu-nav')
 
 window.addEventListener('storage', () => {
     if (getTotalItems() > 0) {
@@ -38,8 +14,19 @@ window.addEventListener('storage', () => {
     }
 })
 
-// reste navbar to presets
-window.addEventListener('load', () => {
-    navbar.classList.remove('hide-navbar');
-    navbar_waves.classList.add('hidden')
+
+
+burger_menu.addEventListener('click', () => {
+    const entire_burger_menu = document.getElementsByClassName('burger-menu')[0];
+    if (!entire_burger_menu.classList.contains('burger-in-focus'))
+    {
+        entire_burger_menu.classList.add('burger-in-focus', 'burger-icon-active');
+        burger_menu_nav.style.display = "block";
+        document.querySelector('body').style.overflowY = "hidden";
+    } else  {
+        entire_burger_menu.classList.remove('burger-in-focus', 'burger-icon-active')
+        burger_menu_nav.style.display = "none";
+        document.querySelector('body').style.overflowY = "scroll";
+    }
+
 });

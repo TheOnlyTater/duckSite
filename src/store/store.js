@@ -13,11 +13,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const backgroundImage = document.createElement('img');
         backgroundImage.src =  storeItem.images[0];
         
+        const div = document.createElement('div');
+
         const productName = document.createElement('h2');
         productName.innerText = storeItem.name;
 
+        const productPrice = document.createElement('p');
+        productPrice.innerText = storeItem.price;
+
+        div.appendChild(productName);
+        div.appendChild(productPrice);
+
         storeCard.appendChild(backgroundImage);
-        storeCard.appendChild(productName);
+        storeCard.appendChild(div);
 
         cardContainer.appendChild(storeCard);
     })

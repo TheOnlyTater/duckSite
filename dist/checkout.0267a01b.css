@@ -1,0 +1,72 @@
+.checkout {
+  justify-content: space-evenly;
+}
+
+.checkout-user-info {
+  border: 1px solid #000;
+  width: 420px;
+  padding: 1em;
+}
+
+.checkout-user-info > form {
+  flex-direction: column;
+  gap: 2em;
+  display: flex;
+}
+
+.checkout-user-info > form > * {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+}
+
+.input-parent {
+  justify-content: space-between;
+  display: flex;
+}
+
+.user-input > input {
+  width: 100%;
+}
+
+.user-input > b {
+  font-size: 12px;
+}
+
+.checkout-product-info {
+  flex-direction: column;
+  display: flex;
+}
+
+.product-container {
+  border: 1px solid #000;
+  justify-content: space-between;
+  width: 400px;
+  height: 100px;
+  display: flex;
+}
+
+.product-container > img {
+  width: 100px;
+}
+
+.product-container > span {
+  align-items: center;
+  display: flex;
+}
+
+.custom-input {
+  color: #fff;
+  background: #000;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: .4em;
+  transition: all .5s;
+}
+
+.custom-input:focus {
+  color: #000;
+  background: #fff;
+}
+/*# sourceMappingURL=checkout.0267a01b.css.map */

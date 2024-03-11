@@ -1,0 +1,30 @@
+.info-island {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 500px;
+  padding: 1.5em;
+  display: flex;
+}
+
+@media screen and (width <= 800px) {
+  .info-island {
+    border: none;
+    border-radius: 0;
+    align-items: flex-start;
+    width: 100%;
+    max-width: none;
+    position: static !important;
+  }
+
+  .info-island > h1 {
+    font-size: 20px;
+  }
+
+  .info-island > p {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=index.43b3ab1f.css.map */

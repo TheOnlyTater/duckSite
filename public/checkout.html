@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
 
-    <link rel="stylesheet" href="./styles/checkout.css">
-
-    
+    <link rel="stylesheet" href="./styles/checkout/checkout.css">
 
 </head>
 <body>
@@ -64,17 +62,29 @@
     <main>
         <section class="checkout flex-center">
             <div class="checkout-user-info">
-                <form action="">
-                    <div>
-                        <input class="half-width" type="text" name="user-first-name" id="" required>
-                        <input class="half-width" type="text" name="user-last-name" id="" required>
+                <form class="user-info-form" action="">
+                    <div class="input-parent">
+                        <span class="user-input flex-col">
+                            <b>FIRST NAME</b>
+                            <input class="custom-input half-width" type="text" placeholder="First name" name="user-first-name" id="" required>
+                        </span>
+                        <span class="user-input flex-col">
+                            <b>LAST NAME</b>
+                            <input class="custom-input half-width" type="text" placeholder="Last name" name="user-last-name" id="" required>
+                        </span>
+                    </div>
+                    <div class="input-parent">
+                        <span class="user-input flex-col">
+                            <b>EMAIL</b>
+                            <input class="custom-input" type="text" placeholder="Last name" name="user-last-name" id="" required>
+                        </span>
+                        <span class="user-input flex-col">
+                            <b>PHONE NUMBER</b>
+                            <input class="custom-input" type="text" placeholder="Last name" name="user-last-name" id="" required>
+                        </span>
+
                     </div>
                     <div>
-                        <input class="half-width" type="text" name="email" id="" required>
-                        <input class="half-width" type="text" name="phone-number" id="">
-                    </div>
-                    <div>
-                        <input class="half-width" type="text" name="country">
                         <input class="half-width" type="text" name="city" id="">
                         <input class="full-width" type="text" name="postal-code" id="">
                     </div>

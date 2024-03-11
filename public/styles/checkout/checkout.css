@@ -1,10 +1,12 @@
+@import './../main.css';
+
 .checkout {
     justify-content: space-evenly;
 }
 
 .checkout-user-info {
     padding: 1em;
-    width: 400px;
+    width: 420px;
     border: 1px solid black;
 }
 
@@ -18,6 +20,19 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.input-parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-input >input {
+    width: 100%;
+}
+
+.user-input > b {
+    font-size: 12px;
 }
 
 /*
@@ -46,6 +61,26 @@
 .product-container > span {
     display: flex;
     align-items: center;
-    gap: 1em;
 }
 
+
+/*
+* INPUT ELEMENT DESIGN
+*/
+
+
+.custom-input {
+    padding: .4em;
+
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: .5s;
+}
+
+.custom-input:focus {
+    color: black;
+    background: white;
+}

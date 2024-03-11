@@ -1,12 +1,15 @@
 header {
-  background-color: #fff;
-  width: 100vw;
-  height: 100vh;
+  min-height: 800px;
 }
 
-.swiper-island-element {
+header .info-island {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+
+.swiper-island {
   background-color: #fff;
-  border-radius: 5px;
   gap: 2em;
   max-width: 500px;
   padding: 1.5em;
@@ -21,16 +24,8 @@ header {
     justify-content: space-around !important;
   }
 
-  .swiper-island-element {
-    align-items: center;
-    max-width: none;
+  header .info-island {
     padding-top: 7.5em;
-    position: static;
-  }
-
-  .swiper-island-element > p {
-    width: 90%;
   }
 }
-
-/*# sourceMappingURL=index.5dbf4c71.css.map */
+/*# sourceMappingURL=index.439d039f.css.map */
