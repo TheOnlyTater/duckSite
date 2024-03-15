@@ -605,6 +605,36 @@ document.addEventListener("DOMContentLoaded", ()=>{
 },{"../storeItems.json":"1O2RX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1O2RX":[function(require,module,exports) {
 module.exports = JSON.parse('[{"category":"cool duck","name":"dfsadsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsada","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21}]');
 
+},{}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
 },{}]},["jivBN","4DWwg"], "4DWwg", "parcelRequiree564")
 
 //# sourceMappingURL=index.615cfb4d.js.map

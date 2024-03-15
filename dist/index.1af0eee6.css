@@ -1,14 +1,16 @@
 .about-section {
-  background-color: #00f;
+  background-color: #0444aa;
   justify-content: space-evenly;
   align-items: center;
   gap: 2em;
   min-height: 800px;
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 
 .about-section > img {
+  z-index: 4;
   width: 30vw;
   min-width: 200px;
   height: 30vw;

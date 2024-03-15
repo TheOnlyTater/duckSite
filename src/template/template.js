@@ -1,6 +1,7 @@
 import storeItems from '../storeItems.json';
-import '../handlers/cartHandler';
-import { decrementItemTotal, getItemCount, getItemTotal, getStorage, incrementItemTotal, incremetnItemTotal } from '../handlers/cartHandler';
+import '../handlers/betterhandler'
+import { getProductQuantity, changeProductQuantiy, getBagItems } from '../handlers/betterhandler';
+
 
 const itemIDX = window.location.hash.substring(1).split('=')[1];
 const addItemsCart = {
@@ -26,6 +27,7 @@ const template = {
 
 document.addEventListener('DOMContentLoaded', () => {
     const item = storeItems[itemIDX];
+
     template.title.textContent = item.category;
     template.name.textContent = item.name;
     template.price.textContent = "$" + item.price;
@@ -37,17 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
     template.weight.textContent = item.weight;
 
     // load correct inital button
-    if (getItemCount(item.name) > 1)
+    if (getProductQuantity(itemIDX) >= 1)
     {
         addItemsCart.single.classList.add('hidden');
         addItemsCart.multi.classList.remove('hidden')
-        addItemsCart.count.textContent = getItemCount(storeItems[itemIDX].name);
+
+        addItemsCart.count.textContent = getProductQuantity(itemIDX);
     }
 })
 
 document.addEventListener('click', () => {
-    addItemsCart.count.textContent = getItemCount(storeItems[itemIDX].name);
-    if (Number(getItemCount(storeItems[itemIDX].name) < 1))
+    addItemsCart.count.textContent = getProductQuantity(itemIDX);
+    if (getProductQuantity(itemIDX) < 1)
     {
         addItemsCart.single.classList.remove('hidden');
         addItemsCart.multi.classList.add('hidden')
@@ -55,15 +58,16 @@ document.addEventListener('click', () => {
 })
 
 addItemsCart.single.addEventListener('click', () => {
-    incrementItemTotal(storeItems[itemIDX].name);
+    changeProductQuantiy(itemIDX, 1);
+
     addItemsCart.single.classList.add('hidden');
     addItemsCart.multi.classList.remove('hidden')
 })
 
 addItemsCart.add.addEventListener('click', () => {
-    incrementItemTotal(storeItems[itemIDX].name);
+    changeProductQuantiy(itemIDX, 1);
 })
 
 addItemsCart.remove.addEventListener('click', () => {
-    decrementItemTotal(storeItems[itemIDX].name);
+    changeProductQuantiy(itemIDX, -1);
 })

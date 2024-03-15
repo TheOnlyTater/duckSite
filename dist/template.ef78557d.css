@@ -7,7 +7,7 @@
 .store-page {
   letter-spacing: 1px;
   color: #fff;
-  background-color: #000;
+  background-color: var(--background-color);
   justify-content: center;
   align-items: center;
   gap: 6em;
@@ -21,7 +21,9 @@
 }
 
 .store-page > img {
+  object-fit: fill;
   width: 500px;
+  max-height: 500px;
 }
 
 .product-info {
@@ -106,7 +108,7 @@
   -ms-align-items: center;
   -moz-justify-content: center;
   -ms-justify-content: center;
-  background-color: #0000;
+  background-color: #af5c03;
   border: none;
   border-radius: 4px;
   justify-content: center;
@@ -121,7 +123,7 @@
   display: inline-flex;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 6px 15px #10277026;
+  box-shadow: 0 6px 15px #a6a607;
 }
 
 .store-button:before {
@@ -137,8 +139,8 @@
 }
 
 .store-button:hover {
-  background-color: #000;
-  box-shadow: 0 12px 35px #10277040;
+  background-color: var(--button-color);
+  box-shadow: 0 5px 20px #ff0;
 }
 
 .multi-button {

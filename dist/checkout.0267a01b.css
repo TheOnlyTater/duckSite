@@ -1,72 +1,232 @@
-.checkout {
-  justify-content: space-evenly;
+.checkout-container {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 6em;
+  min-height: 100vh;
+  display: flex;
 }
 
-.checkout-user-info {
-  border: 1px solid #000;
-  width: 420px;
-  padding: 1em;
+.products {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  display: flex;
 }
 
-.checkout-user-info > form {
+.products img {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 45px;
+}
+
+.products-container {
   flex-direction: column;
   gap: 2em;
+  padding: 7em 1em 1em;
   display: flex;
 }
 
-.checkout-user-info > form > * {
-  flex-wrap: wrap;
-  width: 100%;
+.product-showcase {
+  background-color: #e7e3e3;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+  display: flex;
+  position: relative;
+}
+
+.product-quantity {
   display: flex;
 }
 
-.input-parent {
-  justify-content: space-between;
+.product-quantity > a {
+  background-color: #fff;
+  border-radius: 50%;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  display: grid;
+}
+
+.product-quantity > span {
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  display: grid;
+}
+
+.remove-product {
+  position: absolute;
+  right: -50px;
+}
+
+.remove-product > img {
+  width: 40px;
+}
+
+.remove-product:hover .product-showcase {
+  opacity: .5;
+}
+
+.small-input {
+  width: 50%;
+}
+
+.large-input {
+  width: 80%;
+}
+
+.checkout-input {
+  flex-direction: column;
+  gap: .25em;
   display: flex;
 }
 
-.user-input > input {
-  width: 100%;
-}
-
-.user-input > b {
+.checkout-input > b {
   font-size: 12px;
 }
 
-.checkout-product-info {
-  flex-direction: column;
-  display: flex;
-}
-
-.product-container {
-  border: 1px solid #000;
-  justify-content: space-between;
-  width: 400px;
-  height: 100px;
-  display: flex;
-}
-
-.product-container > img {
-  width: 100px;
-}
-
-.product-container > span {
-  align-items: center;
-  display: flex;
-}
-
-.custom-input {
+.checkout-input > input {
   color: #fff;
-  background: #000;
+  background-color: #0000;
   border: none;
-  border-radius: 5px;
+  border-bottom: 1px solid #000;
   outline: none;
-  padding: .4em;
-  transition: all .5s;
+  width: 90%;
+  min-width: 150px;
+  padding: .75em;
+  transition: all .25s;
 }
 
-.custom-input:focus {
+.checkout-input > input:focus {
+  border-bottom: 1px solid #fff;
+}
+
+.credit-card-data {
+  justify-content: space-evenly;
+  align-items: flex-end;
+  width: 80%;
+  display: flex;
+  position: relative;
+}
+
+.credit-card-data p {
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.credit-card-data > div {
+  gap: 1em;
+  width: 80%;
+  display: flex;
+}
+
+.credit-card-input {
+  flex-direction: column;
+  width: 20%;
+  display: flex;
+}
+
+.credit-card-input b {
+  font-size: 12px;
+}
+
+.credit-card-input > input {
+  color: #fff;
+  background-color: #0000;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  padding: .75em;
+  transition: all .25s;
+}
+
+.credit-card-input > input:focus {
+  border-bottom: 1px solid #fff;
+}
+
+.form-container {
+  background-color: #322c26;
+  width: 50vw;
+  max-width: 450px;
+  height: 100vh;
+  padding: 1em;
+  position: relative;
+}
+
+.form-container .checkout-input {
+  width: 100%;
+}
+
+.information-form {
+  align-items: center;
+  gap: 4em;
+  width: 100%;
+  height: 100%;
+  padding-top: 10em;
+}
+
+.information-form > div {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.information-form button {
   color: #000;
-  background: #fff;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  width: 50vw;
+  max-width: 450px;
+  padding: 1.5em 1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (width <= 1080px) {
+  .checkout-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container {
+    width: 100vw;
+    max-width: none;
+  }
+
+  .information-form {
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  .information-form button {
+    width: 100vw;
+    max-width: none;
+  }
+
+  .products-container {
+    margin-top: 7em;
+  }
+}
+
+@media screen and (width <= 800px) {
+  .product-showcase {
+    gap: 1em;
+    width: 100vw;
+  }
+
+  .remove-product {
+    right: 10px;
+  }
+
+  .remove-product img {
+    background-color: #e7e3e3;
+  }
 }
 /*# sourceMappingURL=checkout.0267a01b.css.map */

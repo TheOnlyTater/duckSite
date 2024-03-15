@@ -25,11 +25,14 @@
     color: white;
 
     overflow: hidden;
-    background-color: black;
+    background-color: var(--background-color);
 }
 
 .store-page > img {
     width: 500px;
+    object-fit: fill;
+
+    max-height: 500px;
 }
 
 .product-info {
@@ -139,8 +142,8 @@
     overflow: hidden;
     
     color: white;
-    background-color: transparent;
-    box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
+    background-color: #af5c03;
+    box-shadow: 0 6px 15px 0 #a6a607;
 
     transition: all .25s linear;
     /*
@@ -172,8 +175,8 @@
 }
 
 .store-button:hover{
-    box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
-    background-color: #000;
+    box-shadow: 0 5px 20px 0 #FFFF00;
+    background-color: var(--button-color);
 }
 
 .multi-button {

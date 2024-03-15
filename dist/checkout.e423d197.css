@@ -17,6 +17,10 @@
   display: none !important;
 }
 
+.full {
+  width: 100%;
+}
+
 .make-full-screen {
   width: 100vw;
   height: 100vh;

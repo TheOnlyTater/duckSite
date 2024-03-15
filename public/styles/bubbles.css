@@ -1,0 +1,70 @@
+@import './main.css';
+
+.bubbles-container {
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 1;
+}
+
+.bubbles-container > .bubble {
+    position: absolute;
+    bottom: -5vw;
+
+
+    width: 5vw;
+    min-width: 20px;
+    height: 5vw;
+    min-height: 20px;
+
+    border-radius: 50%;
+
+    background-color: #fff;
+    z-index: 1;
+}
+
+.bubbles-container > .bubble:first-child {
+    left: 10%;
+    opacity: .5;
+    animation: bubble-animation 5s infinite;
+}
+.bubbles-container > .bubble:nth-child(2) {
+    left: 35%;
+    opacity: .75;
+    animation: bubble-animation 8s infinite ease-in;
+}
+.bubbles-container > .bubble:nth-child(3) {
+    left: 76%;
+    opacity: .25;
+    animation: bubble-animation 10s infinite ease-in-out;
+}
+.bubbles-container > .bubble:nth-child(4){
+    left: 90%;
+    opacity: .35;
+    animation: bubble-animation 9s infinite;
+}
+.bubbles-container > .bubble:nth-child(5) {
+    left: 54%;
+    opacity: .55;
+    animation: bubble-animation 7.5s infinite ease-out;
+}
+.bubbles-container > .bubble:nth-child(6) {
+    left: 23%;
+    opacity: .9;
+    animation: bubble-animation 9.25s infinite ease-out;
+}
+.bubbles-container > .bubble:nth-child(7) {
+    left: 64%;
+    opacity: .7;
+    animation: bubble-animation 7.25s infinite ease-in;
+}
+
+@keyframes bubble-animation {
+    from {
+        bottom: -5vw;
+    } to {
+        bottom: 105vh;
+    }
+}

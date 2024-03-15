@@ -1,8 +1,14 @@
 footer {
+  color: #fff;
+  background-color: #161616;
   justify-content: space-evenly;
   align-items: flex-end;
   padding: 1em;
   display: flex;
+}
+
+footer a {
+  color: #fff;
 }
 
 .website-footer-links > ul, .website-external-links {

@@ -1,0 +1,71 @@
+.bubbles-container {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.bubbles-container > .bubble {
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 5vw;
+  min-width: 20px;
+  height: 5vw;
+  min-height: 20px;
+  position: absolute;
+  bottom: -5vw;
+}
+
+.bubbles-container > .bubble:first-child {
+  opacity: .5;
+  animation: 5s infinite bubble-animation;
+  left: 10%;
+}
+
+.bubbles-container > .bubble:nth-child(2) {
+  opacity: .75;
+  animation: 8s ease-in infinite bubble-animation;
+  left: 35%;
+}
+
+.bubbles-container > .bubble:nth-child(3) {
+  opacity: .25;
+  animation: 10s ease-in-out infinite bubble-animation;
+  left: 76%;
+}
+
+.bubbles-container > .bubble:nth-child(4) {
+  opacity: .35;
+  animation: 9s infinite bubble-animation;
+  left: 90%;
+}
+
+.bubbles-container > .bubble:nth-child(5) {
+  opacity: .55;
+  animation: 7.5s ease-out infinite bubble-animation;
+  left: 54%;
+}
+
+.bubbles-container > .bubble:nth-child(6) {
+  opacity: .9;
+  animation: 9.25s ease-out infinite bubble-animation;
+  left: 23%;
+}
+
+.bubbles-container > .bubble:nth-child(7) {
+  opacity: .7;
+  animation: 7.25s ease-in infinite bubble-animation;
+  left: 64%;
+}
+
+@keyframes bubble-animation {
+  from {
+    bottom: -5vw;
+  }
+
+  to {
+    bottom: 105vh;
+  }
+}
+/*# sourceMappingURL=index.0a6456d7.css.map */

@@ -584,14 +584,23 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"izDZo":[function(require,module,exports) {
-var _cartHandler = require("./handlers/cartHandler");
+var _betterhandler = require("./handlers/betterhandler");
 const navbar_bag = document.getElementById("bag-item-counter");
 const burger_menu = document.getElementById("burger-menu");
 const burger_menu_nav = document.getElementById("burger-menu-nav");
+const travel_duck = document.getElementById("traveling-duck");
 window.addEventListener("storage", ()=>{
-    if ((0, _cartHandler.getTotalItems)() > 0) {
+    const quant = (0, _betterhandler.getTotalProductQuantity)();
+    if (quant > 0) {
         navbar_bag.classList.remove("hidden");
-        navbar_bag.textContent = (0, _cartHandler.getTotalItems)();
+        navbar_bag.textContent = quant;
+    } else navbar_bag.classList.add("hidden");
+});
+window.addEventListener("DOMContentLoaded", ()=>{
+    const quant = (0, _betterhandler.getTotalProductQuantity)();
+    if (Number(quant) > 0) {
+        navbar_bag.classList.remove("hidden");
+        navbar_bag.textContent = quant;
     } else navbar_bag.classList.add("hidden");
 });
 burger_menu.addEventListener("click", ()=>{
@@ -606,91 +615,76 @@ burger_menu.addEventListener("click", ()=>{
         document.querySelector("body").style.overflowY = "scroll";
     }
 });
+// DUCK NAVBAR ANIMATION
+const get_duck_angle = (x)=>{
+    return Math.asin(Math.cos(x) * Math.cos(x) / (Math.cos(x) * Math.cos(x) + 1));
+};
+const get_current_window_x = ()=>{
+    return window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+};
+document.addEventListener("DOMContentLoaded", ()=>{
+    setInterval(()=>{
+        const duckPos = Math.PI * 2 * get_current_window_x();
+        travel_duck.style.left = `${duckPos * 2}px`;
+        travel_duck.style.top = `${Math.sin(duckPos) * 7}px`;
+        travel_duck.style.rotate = `${get_duck_angle(duckPos) * 100}deg`;
+    }, 200);
+});
 
-},{"./handlers/cartHandler":"3gZfW"}],"3gZfW":[function(require,module,exports) {
+},{"./handlers/betterhandler":"dYCnJ"}],"dYCnJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "removeItem", ()=>removeItem);
-parcelHelpers.export(exports, "decrementItemTotal", ()=>decrementItemTotal);
-parcelHelpers.export(exports, "incrementItemTotal", ()=>incrementItemTotal);
-parcelHelpers.export(exports, "getStorage", ()=>getStorage);
-parcelHelpers.export(exports, "getItemTotal", ()=>getItemTotal);
-parcelHelpers.export(exports, "getItemCount", ()=>getItemCount);
-parcelHelpers.export(exports, "getTotalItems", ()=>getTotalItems);
-parcelHelpers.export(exports, "giveAllCurrentItems", ()=>giveAllCurrentItems);
+parcelHelpers.export(exports, "getProductPrice", ()=>getProductPrice);
+parcelHelpers.export(exports, "getCurrentPriceTotal", ()=>getCurrentPriceTotal);
+parcelHelpers.export(exports, "changeProductQuantiy", ()=>changeProductQuantiy);
+parcelHelpers.export(exports, "getProductQuantity", ()=>getProductQuantity);
+parcelHelpers.export(exports, "getBagItems", ()=>getBagItems);
+parcelHelpers.export(exports, "getTotalProductQuantity", ()=>getTotalProductQuantity);
+var _storeItemsJson = require("../storeItems.json");
+var _storeItemsJsonDefault = parcelHelpers.interopDefault(_storeItemsJson);
+// creates a list of all products in corresponding order
 document.addEventListener("DOMContentLoaded", ()=>{
-    if (!localStorage.getItem("bag")) localStorage.setItem("bag", JSON.stringify({
-        "items": {}
-    }));
+    if (!localStorage.getItem("bag")) {
+        const items = [
+            ...(0, _storeItemsJsonDefault.default).map((obj, idx)=>[
+                    idx,
+                    0
+                ])
+        ];
+        localStorage.setItem("bag", JSON.stringify(items));
+    }
 });
-const getStorage = ()=>{
+const getCurrentItems = ()=>{
     return JSON.parse(localStorage.getItem("bag"));
 };
-const getTotalItems = ()=>{
-    return Object.values(getStorage().items).reduce((acc, val)=>val + acc, 0);
+const updateItemsState = (items)=>{
+    localStorage.setItem("bag", JSON.stringify(items));
 };
-const giveAllCurrentItems = ()=>{
-    return Object.keys(getStorage().items).filter((name)=>getItemTotal(name) > 0);
+// item[0] = json index, item[1] = quantity
+const getCurrentPriceTotal = ()=>{
+    return getCurrentItems().reduce((item, acc)=>(0, _storeItemsJsonDefault.default)[item[0]] * item[1] + acc, 0);
 };
-const getItemTotal = (item)=>{
-    return getStorage().items[item];
+const getProductPrice = (idx)=>{
+    return getCurrentItems()[idx][1] * (0, _storeItemsJsonDefault.default)[idx].price;
 };
-const setStorage = (obj)=>{
-    localStorage.setItem("bag", JSON.stringify(obj));
+const changeProductQuantiy = (idx, value = NaN)=>{
+    const newItems = getCurrentItems();
+    if (value < 0 && value + newItems[idx][1] < 0) return;
+    newItems[idx][1] += value;
+    updateItemsState(newItems);
 };
-const getItemCount = (name)=>{
-    return getStorage().items[name];
+const getProductQuantity = (idx)=>{
+    return getCurrentItems()[idx][1];
 };
-const incrementItemTotal = (itemName)=>{
-    const storage = getStorage();
-    storage.items[itemName] = (storage.items[itemName] || 0) + 1;
-    setStorage(storage);
+const getTotalProductQuantity = ()=>{
+    return parseFloat(getCurrentItems().reduce((item, acc)=>item[1] + acc, 0));
 };
-const decrementItemTotal = (itemName)=>{
-    const storage = getStorage();
-    if (storage.items[itemName] > 0) {
-        storage.items[itemName]--;
-        setStorage(storage);
-        return 1;
-    }
-    return null;
-};
-const removeItem = (itemName)=>{
-    const storage = getStorage();
-    storage.items[itemName] = 0;
-    setStorage(storage);
+const getBagItems = ()=>{
+    return [
+        ...getCurrentItems().filter((item)=>item[1] > 0)
+    ];
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}]},["2uVdI","izDZo"], "izDZo", "parcelRequiree564")
+},{"../storeItems.json":"1O2RX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["2uVdI","izDZo"], "izDZo", "parcelRequiree564")
 
 //# sourceMappingURL=index.ad585765.js.map

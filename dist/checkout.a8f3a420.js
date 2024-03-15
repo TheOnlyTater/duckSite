@@ -585,93 +585,126 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"2B6Fn":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _cartHandler = require("../handlers/cartHandler");
+var _betterhandler = require("../handlers/betterhandler");
 var _storeItemsJson = require("../storeItems.json");
 var _storeItemsJsonDefault = parcelHelpers.interopDefault(_storeItemsJson);
-const productIsland = document.getElementById("checkout-products");
+const prodcontainer = document.getElementById("products");
 document.addEventListener("DOMContentLoaded", ()=>{
-    const items = (0, _cartHandler.giveAllCurrentItems)();
-    const container = document.createElement("div");
-    container.classList.add("product-container");
-    const img = document.createElement("img");
-    container.appendChild(img);
-    const span = document.createElement("span");
-    container.appendChild(span);
-    const productName = document.createElement("p");
-    span.appendChild(productName);
-    const productQuantity = document.createElement("p");
-    span.appendChild(productQuantity);
-    const productPrice = document.createElement("p");
-    span.appendChild(productPrice);
-    for(let i = 0; i < items.length; i++){
-        let item = null;
-        for(let j = 0; j < (0, _storeItemsJsonDefault.default).length; j++)if ((0, _storeItemsJsonDefault.default)[j].name === items[i]) {
-            item = (0, _storeItemsJsonDefault.default)[j];
-            break;
-        }
+    const items = (0, _betterhandler.getBagItems)();
+    items.map((val, idx)=>{
+        const item = (0, _storeItemsJsonDefault.default)[val[0]];
+        const container = document.createElement("div");
+        container.classList.add("product-showcase");
+        const img = document.createElement("img");
         img.src = item.images[0];
-        productName.textContent = item.name;
-        productPrice.textContent = "$" + item.price;
-        productQuantity.textContent = (0, _cartHandler.getItemCount)(item.name);
-        productIsland.appendChild(container);
-    }
+        container.appendChild(img);
+        const productNameCont = document.createElement("span");
+        const prodName = document.createElement("b");
+        prodName.innerText = item.name;
+        const prodType = document = document.createElement("p");
+        prodType.innerText = item.category;
+        productNameCont.appendChild(prodName);
+        productNameCont.appendChild(prodType);
+        container.appendChild(productNameCont);
+        const price = document.createElement("p");
+        price.innerText = item.price;
+        container.appendChild(price);
+        const div = document.createElement("div");
+        div.classList.add("product-quantity");
+        const counter = document.createElement("span");
+        counter.innerText = val[1];
+        div.appendChild(counter);
+        const total = document.createElement("p");
+        total.innerText = `$${Math.round(val[1] * item.price)}`;
+        const addQuant = document.createElement("a");
+        addQuant.innerText = "+";
+        addQuant.onclick = ()=>{
+            (0, _betterhandler.changeProductQuantiy)(idx, 1);
+            const temp = (0, _betterhandler.getProductQuantity)(idx);
+            counter.innerText = temp;
+            total.innerText = `$${Math.round(temp * item.price)}`;
+        };
+        div.appendChild(addQuant);
+        div.appendChild(counter);
+        const removeQuant = document.createElement("a");
+        removeQuant.innerText = "-";
+        removeQuant.onclick = ()=>{
+            (0, _betterhandler.changeProductQuantiy)(idx, -1);
+            const temp = (0, _betterhandler.getProductQuantity)(idx);
+            counter.innerText = temp;
+            total.innerText = `$${Math.round(temp * item.price)}`;
+        };
+        div.appendChild(removeQuant);
+        container.appendChild(div);
+        container.appendChild(total);
+        const removeProd = document.createElement("a");
+        removeProd.classList.add("remove-product");
+        const img2 = document.createElement("img");
+        img2.src = "../assets/close.svg";
+        removeProd.appendChild(img2);
+        container.appendChild(removeProd);
+        prodcontainer.appendChild(container);
+    });
 });
 
-},{"../handlers/cartHandler":"3gZfW","../storeItems.json":"1O2RX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3gZfW":[function(require,module,exports) {
+},{"../handlers/betterhandler":"dYCnJ","../storeItems.json":"1O2RX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dYCnJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "removeItem", ()=>removeItem);
-parcelHelpers.export(exports, "decrementItemTotal", ()=>decrementItemTotal);
-parcelHelpers.export(exports, "incrementItemTotal", ()=>incrementItemTotal);
-parcelHelpers.export(exports, "getStorage", ()=>getStorage);
-parcelHelpers.export(exports, "getItemTotal", ()=>getItemTotal);
-parcelHelpers.export(exports, "getItemCount", ()=>getItemCount);
-parcelHelpers.export(exports, "getTotalItems", ()=>getTotalItems);
-parcelHelpers.export(exports, "giveAllCurrentItems", ()=>giveAllCurrentItems);
+parcelHelpers.export(exports, "getProductPrice", ()=>getProductPrice);
+parcelHelpers.export(exports, "getCurrentPriceTotal", ()=>getCurrentPriceTotal);
+parcelHelpers.export(exports, "changeProductQuantiy", ()=>changeProductQuantiy);
+parcelHelpers.export(exports, "getProductQuantity", ()=>getProductQuantity);
+parcelHelpers.export(exports, "getBagItems", ()=>getBagItems);
+parcelHelpers.export(exports, "getTotalProductQuantity", ()=>getTotalProductQuantity);
+var _storeItemsJson = require("../storeItems.json");
+var _storeItemsJsonDefault = parcelHelpers.interopDefault(_storeItemsJson);
+// creates a list of all products in corresponding order
 document.addEventListener("DOMContentLoaded", ()=>{
-    if (!localStorage.getItem("bag")) localStorage.setItem("bag", JSON.stringify({
-        "items": {}
-    }));
+    if (!localStorage.getItem("bag")) {
+        const items = [
+            ...(0, _storeItemsJsonDefault.default).map((obj, idx)=>[
+                    idx,
+                    0
+                ])
+        ];
+        localStorage.setItem("bag", JSON.stringify(items));
+    }
 });
-const getStorage = ()=>{
+const getCurrentItems = ()=>{
     return JSON.parse(localStorage.getItem("bag"));
 };
-const getTotalItems = ()=>{
-    return Object.values(getStorage().items).reduce((acc, val)=>val + acc, 0);
+const updateItemsState = (items)=>{
+    localStorage.setItem("bag", JSON.stringify(items));
 };
-const giveAllCurrentItems = ()=>{
-    return Object.keys(getStorage().items).filter((name)=>getItemTotal(name) > 0);
+// item[0] = json index, item[1] = quantity
+const getCurrentPriceTotal = ()=>{
+    return getCurrentItems().reduce((item, acc)=>(0, _storeItemsJsonDefault.default)[item[0]] * item[1] + acc, 0);
 };
-const getItemTotal = (item)=>{
-    return getStorage().items[item];
+const getProductPrice = (idx)=>{
+    return getCurrentItems()[idx][1] * (0, _storeItemsJsonDefault.default)[idx].price;
 };
-const setStorage = (obj)=>{
-    localStorage.setItem("bag", JSON.stringify(obj));
+const changeProductQuantiy = (idx, value = NaN)=>{
+    const newItems = getCurrentItems();
+    if (value < 0 && value + newItems[idx][1] < 0) return;
+    newItems[idx][1] += value;
+    updateItemsState(newItems);
 };
-const getItemCount = (name)=>{
-    return getStorage().items[name];
+const getProductQuantity = (idx)=>{
+    return getCurrentItems()[idx][1];
 };
-const incrementItemTotal = (itemName)=>{
-    const storage = getStorage();
-    storage.items[itemName] = (storage.items[itemName] || 0) + 1;
-    setStorage(storage);
+const getTotalProductQuantity = ()=>{
+    return parseFloat(getCurrentItems().reduce((item, acc)=>item[1] + acc, 0));
 };
-const decrementItemTotal = (itemName)=>{
-    const storage = getStorage();
-    if (storage.items[itemName] > 0) {
-        storage.items[itemName]--;
-        setStorage(storage);
-        return 1;
-    }
-    return null;
-};
-const removeItem = (itemName)=>{
-    const storage = getStorage();
-    storage.items[itemName] = 0;
-    setStorage(storage);
+const getBagItems = ()=>{
+    return [
+        ...getCurrentItems().filter((item)=>item[1] > 0)
+    ];
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+},{"../storeItems.json":"1O2RX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1O2RX":[function(require,module,exports) {
+module.exports = JSON.parse('[{"category":"cool duck","name":"dfsadsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsada","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21}]');
+
+},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -700,9 +733,6 @@ exports.export = function(dest, destName, get) {
         get: get
     });
 };
-
-},{}],"1O2RX":[function(require,module,exports) {
-module.exports = JSON.parse('[{"category":"cool duck","name":"dfsadsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsada","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21}]');
 
 },{}]},["kMYcN","2B6Fn"], "2B6Fn", "parcelRequiree564")
 

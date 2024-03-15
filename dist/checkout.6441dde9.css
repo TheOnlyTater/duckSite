@@ -1,16 +1,17 @@
 @import "https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Anton&display=swap";
 :root {
-  --primary-color: #f9de06;
+  --primary-color: #eaaf2f;
   --secondary-color: #8ee4f0;
-  --navbutton-primary: #fff;
-  --background-color: #000;
+  --navbutton-primary: #000;
+  --background-color: #181818;
   --text-color: #000;
   --link-color: #000;
   --hover-color: #000;
   --border-color: #000;
-  --button-border-color: #ffd162;
-  --button-color: #1a1c3c;
+  --button-border-color: #000;
+  --button-color: #ff9100;
+  --button-text-color: #000;
   --error-color: #000;
   --success-color: #000;
   --warning-color: #000;

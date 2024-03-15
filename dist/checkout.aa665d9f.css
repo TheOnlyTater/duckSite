@@ -22,13 +22,13 @@
 }
 
 .navbar img {
+  z-index: 5;
   width: 40px;
   height: 40px;
 }
 
 #traveling-duck {
   position: absolute;
-  left: 20%;
 }
 
 .navbar-button {
@@ -37,6 +37,8 @@
 
 .navbar-button > a {
   color: #fff;
+  z-index: 10;
+  position: relative;
 }
 
 .navbar-button > img {

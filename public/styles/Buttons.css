@@ -13,8 +13,9 @@
     url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' standalone='no'?%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 20010904//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'%3E%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='35.000000pt' height='37.000000pt' viewBox='0 0 50.000000 53.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cmetadata%3E Created by potrace 1.16, written by Peter Selinger 2001-2019 %3C/metadata%3E%3Cg transform='translate(0.000000,53.000000) scale(0.100000,-0.100000)' fill='%23000000' stroke='none'%3E%3Cpath d='M229 435 c-14 -8 -34 -26 -43 -40 -18 -27 -24 -104 -10 -126 8 -13 -51 -6 -98 12 -14 6 -37 9 -50 7 -22 -3 -23 -7 -23 -75 0 -77 13 -106 69 -147 24 -18 42 -21 145 -21 130 0 157 10 187 66 15 30 15 56 -1 107 -6 18 -4 22 14 22 30 0 81 28 81 43 0 7 -16 21 -35 30 -25 12 -40 29 -51 57 -23 56 -56 80 -113 80 -25 -1 -58 -7 -72 -15z m110 -30 c50 -25 65 -112 25 -146 -18 -15 -18 -33 1 -49 9 -7 15 -29 15 -50 0 -30 -6 -43 -26 -59 -23 -18 -41 -21 -134 -21 -121 0 -150 12 -176 76 -13 30 -20 104 -10 104 2 0 20 -7 39 -15 41 -17 143 -20 152 -5 4 6 0 22 -9 35 -25 38 -20 79 13 114 32 35 65 40 110 16z'/%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
 	background-position: calc(0% - 100px), calc(100% - 12px);
-	background-color: white;
+	background-color: var(--button-color);
 
+    color: var(--button-text-color);
     font-size: 14px;
 	text-align: center;
 	letter-spacing: 0.08em;
@@ -22,7 +23,7 @@
 	font-weight: 700;
 	white-space: nowrap;
 
-    border: 2px solid black;
+    border: 2px solid var(--button-border-color);
 	padding: 14px 14px;
     overflow: hidden;
 
@@ -31,7 +32,7 @@
 
 .duck-linking-button:hover,
 .duck-linking-button:focus {
-	background-position: calc(25% - 50px), calc(100% + 100px);
+	background-position: calc(25% - 60px), calc(100% + 100px);
 }
 
 @media screen and  (max-width: 800px){

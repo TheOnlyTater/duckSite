@@ -9,7 +9,8 @@
     justify-content: space-evenly;
     gap: 2em;
 
-    background-color: blue;
+    background-color: #0444aa;
+    overflow: hidden;
 }
 
 .about-section > img {
@@ -21,6 +22,7 @@
 
     transform: scaleX(-1);
     animation: duck-animation 3s linear infinite;
+    z-index: 4;
 }
 
 
