@@ -50,14 +50,14 @@ const get_duck_angle = (x) => {
 }
 
 const get_current_window_x = () => {
-    return (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    return (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight));
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => {
-        const duckPos = Math.PI * 2 * get_current_window_x();
-        travel_duck.style.left = `${duckPos* 2}px`
-        travel_duck.style.top = `${Math.sin(duckPos) * 7}px`
-        travel_duck.style.rotate = `${get_duck_angle(duckPos) * 100}deg`
-    }, 200)
+        const duckPos = Math.PI * 1000 * get_current_window_x();
+        travel_duck.style.left = `${window.innerWidth * 0.1 +Math.PI * 4 * window.innerWidth * get_current_window_x() * .5}px`
+        travel_duck.style.top = `${Math.sin(duckPos) * 10}px`
+        // travel_duck.style.rotate = `${get_duck_angle(duckPos) * 100}deg`
+    }, 30)
 })

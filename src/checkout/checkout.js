@@ -5,6 +5,23 @@ const prodcontainer = document.getElementById('products');
 
 document.addEventListener('DOMContentLoaded', () => {
     const items = getBagItems();
+    
+    if (items.length == 0)
+    {
+        const cont = document.createElement('div');
+        cont.classList.add('empty-bag');
+
+        const img = document.createElement('img');
+        img.src = './store-bag-icon.9422d95b.svg'
+        cont.appendChild(img);
+
+        const p = document.createElement('p');
+        p.innerText = "bag is empty";
+        cont.appendChild(p);
+
+        prodcontainer.appendChild(cont);
+    }
+
 
     items
     .map((val, idx) => {
@@ -70,9 +87,15 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const removeProd = document.createElement('a');
         removeProd.classList.add('remove-product');
+        removeProd.onclick = () => {
+            changeProductQuantiy(idx);
+            container.remove();
+
+        }
 
         const img2 = document.createElement('img');
-        img2.src = '../assets/close.svg';
+        img2.src = './close.svg';
+
         removeProd.appendChild(img2);
 
         container.appendChild(removeProd);

@@ -588,7 +588,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _storeItemsJson = require("../storeItems.json");
 var _storeItemsJsonDefault = parcelHelpers.interopDefault(_storeItemsJson);
 var _betterhandler = require("../handlers/betterhandler");
-const itemIDX = window.location.hash.substring(1).split("=")[1];
+const itemIDX = Number(window.location.hash.substring(1).split("=")[1]);
 const addItemsCart = {
     add: document.getElementById("add-item"),
     remove: document.getElementById("remove-item"),
@@ -642,93 +642,6 @@ addItemsCart.remove.addEventListener("click", ()=>{
     (0, _betterhandler.changeProductQuantiy)(itemIDX, -1);
 });
 
-},{"../storeItems.json":"1O2RX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../handlers/betterhandler":"dYCnJ"}],"1O2RX":[function(require,module,exports) {
-module.exports = JSON.parse('[{"category":"cool duck","name":"dfsadsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsada","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21}]');
-
-},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"dYCnJ":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getProductPrice", ()=>getProductPrice);
-parcelHelpers.export(exports, "getCurrentPriceTotal", ()=>getCurrentPriceTotal);
-parcelHelpers.export(exports, "changeProductQuantiy", ()=>changeProductQuantiy);
-parcelHelpers.export(exports, "getProductQuantity", ()=>getProductQuantity);
-parcelHelpers.export(exports, "getBagItems", ()=>getBagItems);
-parcelHelpers.export(exports, "getTotalProductQuantity", ()=>getTotalProductQuantity);
-var _storeItemsJson = require("../storeItems.json");
-var _storeItemsJsonDefault = parcelHelpers.interopDefault(_storeItemsJson);
-// creates a list of all products in corresponding order
-document.addEventListener("DOMContentLoaded", ()=>{
-    if (!localStorage.getItem("bag")) {
-        const items = [
-            ...(0, _storeItemsJsonDefault.default).map((obj, idx)=>[
-                    idx,
-                    0
-                ])
-        ];
-        localStorage.setItem("bag", JSON.stringify(items));
-    }
-});
-const getCurrentItems = ()=>{
-    return JSON.parse(localStorage.getItem("bag"));
-};
-const updateItemsState = (items)=>{
-    localStorage.setItem("bag", JSON.stringify(items));
-};
-// item[0] = json index, item[1] = quantity
-const getCurrentPriceTotal = ()=>{
-    return getCurrentItems().reduce((item, acc)=>(0, _storeItemsJsonDefault.default)[item[0]] * item[1] + acc, 0);
-};
-const getProductPrice = (idx)=>{
-    return getCurrentItems()[idx][1] * (0, _storeItemsJsonDefault.default)[idx].price;
-};
-const changeProductQuantiy = (idx, value = NaN)=>{
-    const newItems = getCurrentItems();
-    if (value < 0 && value + newItems[idx][1] < 0) return;
-    newItems[idx][1] += value;
-    updateItemsState(newItems);
-};
-const getProductQuantity = (idx)=>{
-    return getCurrentItems()[idx][1];
-};
-const getTotalProductQuantity = ()=>{
-    return parseFloat(getCurrentItems().reduce((item, acc)=>item[1] + acc, 0));
-};
-const getBagItems = ()=>{
-    return [
-        ...getCurrentItems().filter((item)=>item[1] > 0)
-    ];
-};
-
-},{"../storeItems.json":"1O2RX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["gpcvg","eNftp"], "eNftp", "parcelRequiree564")
+},{"../storeItems.json":"1O2RX","../handlers/betterhandler":"dYCnJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["gpcvg","eNftp"], "eNftp", "parcelRequiree564")
 
 //# sourceMappingURL=template.104d3fe4.js.map

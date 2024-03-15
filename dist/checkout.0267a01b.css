@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900";
 .checkout-container {
   justify-content: space-between;
   align-items: flex-start;
@@ -29,7 +30,7 @@
 }
 
 .product-showcase {
-  background-color: #e7e3e3;
+  background-color: #8cf;
   align-items: center;
   gap: 2em;
   padding: 1em;
@@ -150,11 +151,15 @@
 }
 
 .form-container {
-  background-color: #322c26;
+  color: #fdfdfd;
+  letter-spacing: 1px;
+  background-color: #4363cd;
   width: 50vw;
   max-width: 450px;
-  height: 100vh;
-  padding: 1em;
+  min-height: 675px;
+  max-height: 100vh;
+  font-family: poppins;
+  line-height: 1.2;
   position: relative;
 }
 
@@ -173,6 +178,30 @@
 .information-form > div {
   justify-content: space-evenly;
   display: flex;
+}
+
+.empty-bag {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+.empty-bag img {
+  border-radius: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.empty-bag p {
+  letter-spacing: 1px;
+  font-family: poppins;
+  font-size: 25px;
+  line-height: 1.2;
 }
 
 .information-form button {

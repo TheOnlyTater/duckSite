@@ -1,9 +1,8 @@
 import storeItems from '../storeItems.json';
-import '../handlers/betterhandler'
 import { getProductQuantity, changeProductQuantiy, getBagItems } from '../handlers/betterhandler';
 
 
-const itemIDX = window.location.hash.substring(1).split('=')[1];
+const itemIDX = Number(window.location.hash.substring(1).split('=')[1]);
 const addItemsCart = {
     add: document.getElementById('add-item'),
     remove: document.getElementById('remove-item'),

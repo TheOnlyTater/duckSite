@@ -591,6 +591,17 @@ var _storeItemsJsonDefault = parcelHelpers.interopDefault(_storeItemsJson);
 const prodcontainer = document.getElementById("products");
 document.addEventListener("DOMContentLoaded", ()=>{
     const items = (0, _betterhandler.getBagItems)();
+    if (items.length == 0) {
+        const cont = document.createElement("div");
+        cont.classList.add("empty-bag");
+        const img = document.createElement("img");
+        img.src = "./store-bag-icon.9422d95b.svg";
+        cont.appendChild(img);
+        const p = document.createElement("p");
+        p.innerText = "bag is empty";
+        cont.appendChild(p);
+        prodcontainer.appendChild(cont);
+    }
     items.map((val, idx)=>{
         const item = (0, _storeItemsJsonDefault.default)[val[0]];
         const container = document.createElement("div");
@@ -639,8 +650,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
         container.appendChild(total);
         const removeProd = document.createElement("a");
         removeProd.classList.add("remove-product");
+        removeProd.onclick = ()=>{
+            (0, _betterhandler.changeProductQuantiy)(idx);
+            container.remove();
+        };
         const img2 = document.createElement("img");
-        img2.src = "../assets/close.svg";
+        img2.src = "./close.svg";
         removeProd.appendChild(img2);
         container.appendChild(removeProd);
         prodcontainer.appendChild(container);
@@ -702,7 +717,7 @@ const getBagItems = ()=>{
 };
 
 },{"../storeItems.json":"1O2RX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1O2RX":[function(require,module,exports) {
-module.exports = JSON.parse('[{"category":"cool duck","name":"dfsadsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsada","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21}]');
+module.exports = JSON.parse('[{"category":"cool duck","name":"sebastioans","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsada","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21}]');
 
 },{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
