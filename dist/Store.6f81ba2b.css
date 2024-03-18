@@ -30,7 +30,7 @@
 
 .store-card > div {
   text-align: center;
-  color: #00f;
+  color: #fafafa;
   transition: all .5s;
   position: relative;
   transform: translate(0, -80px);

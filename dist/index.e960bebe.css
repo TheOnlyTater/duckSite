@@ -34,7 +34,6 @@
 }
 
 .store-display-items > a > img {
-  opacity: .8;
   transition: all .5s;
   position: absolute;
   top: 0;
@@ -42,27 +41,17 @@
 }
 
 .store-display-items > a > p {
-  text-align: center;
-  width: 155px;
+  z-index: 1;
+  font-size: 16px;
   position: absolute;
   top: 10px;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
 }
 
 .store-display-items > a:hover, .store-display-items > a > img:hover {
   opacity: 1;
   scale: 1.1;
-}
-
-.sun {
-  background-color: orange;
-  border-radius: 50%;
-  width: 140px;
-  height: 140px;
-  position: absolute;
-  top: -40px;
-  right: -24px;
 }
 
 @media screen and (width <= 1400px) {

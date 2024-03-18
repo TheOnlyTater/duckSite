@@ -584,6 +584,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"a3dwG":[function(require,module,exports) {
+// Slide show setup
 let swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,

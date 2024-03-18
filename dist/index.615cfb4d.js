@@ -587,18 +587,19 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _storeItemsJson = require("../storeItems.json");
 var _storeItemsJsonDefault = parcelHelpers.interopDefault(_storeItemsJson);
-const preview_container = document.getElementById("item-preview-container");
+const storeCardContainer = document.getElementById("item-preview-container");
+// Gets the 6 first products then places them on the grid
 document.addEventListener("DOMContentLoaded", ()=>{
-    (0, _storeItemsJsonDefault.default).slice(0, 6).forEach((item, idx)=>{
-        const a = document.createElement("a");
-        a.style.gridArea = `item${idx + 1}`;
-        const p = document.createElement("p");
-        p.innerText = item.name;
-        const img = document.createElement("img");
-        img.src = item.images[0];
-        a.appendChild(p);
-        a.appendChild(img);
-        preview_container.appendChild(a);
+    (0, _storeItemsJsonDefault.default).slice(0, 6).map((product, idx)=>{
+        const cardContainer = document.createElement("a");
+        cardContainer.style.gridArea = `item${idx + 1}`;
+        const cardText = document.createElement("p");
+        cardText.innerText = product.name;
+        cardContainer.appendChild(cardText);
+        const cardBackgroundImage = document.createElement("img");
+        cardBackgroundImage.src = product.images[0];
+        cardContainer.appendChild(cardBackgroundImage);
+        storeCardContainer.appendChild(cardContainer);
     });
 });
 

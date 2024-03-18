@@ -1,63 +1,66 @@
 import { getTotalProductQuantity } from './handlers/betterhandler';
 
-const navbar_bag = document.getElementById('bag-item-counter')
-const burger_menu = document.getElementById('burger-menu')
-const burger_menu_nav = document.getElementById('burger-menu-nav')
+// SIN WAVE CONSTANTS A * sin(c * x + p) + d
+const A = 5;
+const c = 1;
+const p = 1;
+const d = 1;
 
-const travel_duck = document.getElementById('traveling-duck');
+const navbar = {
+    navbarBag: document.getElementById('bag-item-counter') || null,
+    burgerMenuIcon: document.getElementById('burger-menu') || null,
+    burgerMenu: document.getElementById('burger-menu-nav') || null
+}
 
-window.addEventListener('storage', () => {
-    const quant = getTotalProductQuantity();
-    if (quant > 0) {
-        navbar_bag.classList.remove('hidden')
-        navbar_bag.textContent = quant;
-    } else {
-        navbar_bag.classList.add('hidden')
+// DEBUG
+// checks if element failed to load
+// comment out in prod
+document.addEventListener('DOMContentLoaded', () => {
+    if (Object.keys(navbar).filter((key) => navbar[key] == null).length > 0) {
+        console.error('FAILED TO LOAD NAVBAR!');
     }
 })
 
 
-window.addEventListener('DOMContentLoaded', () => {
-    const quant = getTotalProductQuantity();
+// navbar initalization
+document.addEventListener('DOMContentLoaded', () => {
+    updateBackTotal(); // get bag total on page load
 
-    if (Number(quant) > 0) {
-        navbar_bag.classList.remove('hidden')
-        navbar_bag.textContent = quant;
-    } else {
-        navbar_bag.classList.add('hidden')
-    }
+    // navbar duck progress
+    // shows how much you have progressed thru the page
+
+    
 })
+// NOTE: updates the new bag total each time storage is changed
+window.addEventListener('storageUpdated', () => updateBackTotal())
 
 
-burger_menu.addEventListener('click', () => {
-    const entire_burger_menu = document.getElementsByClassName('burger-menu')[0];
-    if (!entire_burger_menu.classList.contains('burger-in-focus'))
+// BURGER MENU SETUP
+// hide current navbar navlinks and replace it with a burger menu
+navbar.burgerMenuIcon.addEventListener('click', () => {
+    const burgerMenuOverlay = document.getElementsByClassName('burger-menu')[0];
+
+    if (!burgerMenuOverlay.classList.contains('burger-in-focus'))
     {
-        entire_burger_menu.classList.add('burger-in-focus', 'burger-icon-active');
-        burger_menu_nav.style.display = "block";
+        burgerMenuOverlay.classList.add('burger-in-focus', 'burger-icon-active');
+        navbar.burgerMenu.style.display = "block";
         document.querySelector('body').style.overflowY = "hidden";
     } else  {
-        entire_burger_menu.classList.remove('burger-in-focus', 'burger-icon-active')
-        burger_menu_nav.style.display = "none";
+        burgerMenuOverlay.classList.remove('burger-in-focus', 'burger-icon-active')
+        navbar.burgerMenu.style.display = "none";
         document.querySelector('body').style.overflowY = "scroll";
     }
-
-});
-
-// DUCK NAVBAR ANIMATION
-const get_duck_angle = (x) => {
-    return Math.asin((Math.cos(x) * Math.cos(x)) / (Math.cos(x) * Math.cos(x) + 1));
-}
-
-const get_current_window_x = () => {
-    return (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight));
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    setInterval(() => {
-        const duckPos = Math.PI * 1000 * get_current_window_x();
-        travel_duck.style.left = `${window.innerWidth * 0.1 +Math.PI * 4 * window.innerWidth * get_current_window_x() * .5}px`
-        travel_duck.style.top = `${Math.sin(duckPos) * 10}px`
-        // travel_duck.style.rotate = `${get_duck_angle(duckPos) * 100}deg`
-    }, 30)
 })
+
+
+/* HELPER FUNCTIONS */
+const updateBackTotal = () => {
+    const quantity = getTotalProductQuantity();
+    console.log('tsdfs')
+    if (quantity) {
+        navbar.navbarBag.classList.remove('hidden');
+        navbar.navbarBag.innerHTML = quantity;
+    } else {
+        navbar.navbarBag.classList.add('hidden');
+    }
+}

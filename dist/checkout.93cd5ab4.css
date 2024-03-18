@@ -1,0 +1,36 @@
+footer {
+  color: #fff;
+  background-color: #161616;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding: 1em;
+  display: flex;
+}
+
+footer a {
+  color: #fff;
+}
+
+.website-footer-links > ul, .website-external-links {
+  gap: 1.5em;
+}
+
+.website-external-links {
+  height: 100%;
+  display: flex;
+}
+
+.website-external-links img {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (width <= 550px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3em;
+    padding-left: 4em;
+  }
+}
+/*# sourceMappingURL=checkout.93cd5ab4.css.map */

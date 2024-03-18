@@ -42,7 +42,8 @@
 
     transition: .5s;
     transform: translate(0, -80px);
-    color: blue;
+    color: #fafafa;
+
 }
 .store-card > div > h2 {
     transition: .5s;

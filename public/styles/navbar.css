@@ -27,7 +27,7 @@
 .nav-quick-links {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 3em;
 
 }
 
@@ -75,6 +75,27 @@
     z-index: 5;
 
     animation: duck-pop-up .5s linear forwards;
+}
+
+/*
+ *  BAG
+ */
+
+.user-bag > a > span {
+    position: absolute;
+    right: -5px;
+    bottom: -15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+    background-color: red;
+    font-size: 14px;
 }
 
 /*
@@ -198,11 +219,9 @@
 }
 
 .hamburger-menu-button {
-    width: 50vw;
-    min-width: 300px;
-    height: 25vw;
-    min-height: 150px;
-
+    
+    width: calc(60px + 10em);
+    height: calc(40px + 5em);
 
     border: 2px dashed black;
     background-color: white;

@@ -127,11 +127,12 @@
 /* credit card input */
 
 .credit-card-data {
-    position: relative;
     width: 80%;
+
+    position: relative;
     display: flex;
     align-items: flex-end;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .credit-card-data p {
@@ -217,11 +218,11 @@
     left: 25%;
     top: 50%;
 
-   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
 }
 
 .empty-bag img {
@@ -232,9 +233,10 @@
 
 .empty-bag p {
     font-size: 25px;
-  font-family: poppins;
+    font-family: poppins;
     line-height: 1.2;
     letter-spacing: 1px;
+    width: 180px;
 }
 
 .information-form button {
@@ -275,12 +277,28 @@
     .products-container {
         margin-top: 7em;
     }
+
+    .credit-card-data,
+    .large-input  { 
+        width: 60%;
+        min-width: 420px;
+    }
+
+    .large-input > input {
+        width: 100%;
+    }
+
+    .empty-bag {
+        top: 6em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media screen and (max-width: 800px) {
     .product-showcase {
-        width: 100vw;
-        gap: 1em;
+        width: 100%;
+        min-width: 300px;
     }
 
     .remove-product {
@@ -288,5 +306,9 @@
     }
     .remove-product img {
         background-color: #e7e3e3;
+    }
+
+    .information-form > div {
+        scale: .85;
     }
 }

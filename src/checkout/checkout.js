@@ -24,8 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     items
-    .map((val, idx) => {
-        const item = storeItems[val[0]]
+    .map((val) => {
+        const idx = val[0];
+        const item = storeItems[idx];
 
         const container = document.createElement('div');
         container.classList.add('product-showcase');
@@ -46,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         container.appendChild(productNameCont);
 
         const price = document.createElement('p');
-        price.innerText = item.price;
+        price.innerText = `$${item.price}`;
         container.appendChild(price);
 
         const div = document.createElement('div');
@@ -78,6 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const temp = getProductQuantity(idx)
             counter.innerText = temp
             total.innerText = `$${Math.round(temp * item.price)}`;
+            if (temp == 0) {
+                container.remove();
+            }
         };
         div.appendChild(removeQuant);
 
@@ -88,9 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const removeProd = document.createElement('a');
         removeProd.classList.add('remove-product');
         removeProd.onclick = () => {
-            changeProductQuantiy(idx);
+            changeProductQuantiy(idx, -1 * val[1]);
             container.remove();
-
         }
 
         const img2 = document.createElement('img');

@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap";
 .info-island {
   background-color: var(--primary-color);
   z-index: 4;
@@ -8,6 +9,13 @@
   max-width: 500px;
   padding: 1.5em;
   display: flex;
+}
+
+.info-island > p {
+  color: #211f1f;
+  word-spacing: 2px;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 14px;
 }
 
 @media screen and (width <= 800px) {

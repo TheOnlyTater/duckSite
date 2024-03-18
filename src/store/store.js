@@ -1,32 +1,31 @@
 import storeItems from "../storeItems.json";
-const cardContainer = document.getElementById("store-item-container");
+const storeCardContainer = document.getElementById("store-item-container");
 
-
-
+// generates a card for each product that links to its storepage
 document.addEventListener("DOMContentLoaded", () => {
     storeItems.forEach((storeItem, idx) => {
-        const storeCard = document.createElement('a');
-        storeCard.href = `template.html#id=${idx}`;
+        const cardContainer = document.createElement('a');
+        cardContainer.classList.add('store-card');
+        cardContainer.href = `template.html#id=${idx}`;
 
-        storeCard.classList.add('store-card');
 
         const backgroundImage = document.createElement('img');
         backgroundImage.src =  storeItem.images[0];
+        cardContainer.appendChild(backgroundImage);
         
-        const div = document.createElement('div');
+        const textContainer = document.createElement('div');
 
         const productName = document.createElement('h2');
         productName.innerText = storeItem.name;
+        textContainer.appendChild(productName);
+
 
         const productPrice = document.createElement('p');
-        productPrice.innerText = storeItem.price;
+        productPrice.innerText = `$${storeItem.price}`;
+        textContainer.appendChild(productPrice);
 
-        div.appendChild(productName);
-        div.appendChild(productPrice);
+        cardContainer.appendChild(textContainer);
 
-        storeCard.appendChild(backgroundImage);
-        storeCard.appendChild(div);
-
-        cardContainer.appendChild(storeCard);
+        storeCardContainer.appendChild(cardContainer);
     })
 })

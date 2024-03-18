@@ -602,8 +602,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
         cont.appendChild(p);
         prodcontainer.appendChild(cont);
     }
-    items.map((val, idx)=>{
-        const item = (0, _storeItemsJsonDefault.default)[val[0]];
+    items.map((val)=>{
+        const idx = val[0];
+        const item = (0, _storeItemsJsonDefault.default)[idx];
         const container = document.createElement("div");
         container.classList.add("product-showcase");
         const img = document.createElement("img");
@@ -618,7 +619,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         productNameCont.appendChild(prodType);
         container.appendChild(productNameCont);
         const price = document.createElement("p");
-        price.innerText = item.price;
+        price.innerText = `$${item.price}`;
         container.appendChild(price);
         const div = document.createElement("div");
         div.classList.add("product-quantity");
@@ -644,6 +645,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             const temp = (0, _betterhandler.getProductQuantity)(idx);
             counter.innerText = temp;
             total.innerText = `$${Math.round(temp * item.price)}`;
+            if (temp == 0) container.remove();
         };
         div.appendChild(removeQuant);
         container.appendChild(div);
@@ -651,7 +653,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         const removeProd = document.createElement("a");
         removeProd.classList.add("remove-product");
         removeProd.onclick = ()=>{
-            (0, _betterhandler.changeProductQuantiy)(idx);
+            (0, _betterhandler.changeProductQuantiy)(idx, -1 * val[1]);
             container.remove();
         };
         const img2 = document.createElement("img");
@@ -698,17 +700,18 @@ const getCurrentPriceTotal = ()=>{
 const getProductPrice = (idx)=>{
     return getCurrentItems()[idx][1] * (0, _storeItemsJsonDefault.default)[idx].price;
 };
-const changeProductQuantiy = (idx, value = NaN)=>{
+const changeProductQuantiy = (idx, value)=>{
     const newItems = getCurrentItems();
     if (value < 0 && value + newItems[idx][1] < 0) return;
     newItems[idx][1] += value;
     updateItemsState(newItems);
+    window.dispatchEvent(new Event("storageUpdated"));
 };
 const getProductQuantity = (idx)=>{
     return getCurrentItems()[idx][1];
 };
 const getTotalProductQuantity = ()=>{
-    return parseFloat(getCurrentItems().reduce((item, acc)=>item[1] + acc, 0));
+    return parseFloat(getCurrentItems().reduce((acc, item)=>item[1] + acc, 0));
 };
 const getBagItems = ()=>{
     return [

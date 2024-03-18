@@ -42,6 +42,8 @@
  *  DISPLAY CARDs
  */
 
+
+
 .store-display-items > a {
     width: 160px;
     height: 220px;
@@ -62,36 +64,25 @@
     top: 0;
     left: 0;
 
-    opacity: .8;
     transition: .5s;
 }
 
-.store-display-items > a > p {
-    position: absolute;
+.store-display-items > a  > p {
+    position:absolute;
     top: 10px;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
 
-    width: 155px;
-    text-align: center;
+    font-size: 16px;
+
+
+    z-index: 1;
 }
 
 .store-display-items  > a:hover, 
 .store-display-items  > a > img:hover{
     scale: 1.1;
     opacity: 1;
-}
-
-.sun {
-    position: absolute;
-    right: -24px;
-    top: -40px;
-
-    border-radius: 50%;
-
-    width: 140px;
-    height: 140px;
-    background-color: orange;
 }
 
 /*

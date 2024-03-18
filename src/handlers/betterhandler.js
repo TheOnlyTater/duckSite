@@ -27,15 +27,15 @@ const getProductPrice = (idx) => {
     return getCurrentItems()[idx][1] * products[idx].price;
 }
 
-const changeProductQuantiy = (idx, value= NaN) => {
+const changeProductQuantiy = (idx, value) => {
     const newItems = getCurrentItems();
 
-    if (value === NaN)
-        value = -1 * newItems[idx][1]
-    else if (value < 0 && value + newItems[idx][1] < 0) return;
+    if (value < 0 && value + newItems[idx][1] < 0) return;
     
     newItems[idx][1] += value;
     updateItemsState(newItems);
+    
+    window.dispatchEvent(new Event('storageUpdated'))
 }
 
 const getProductQuantity = (idx) => {
@@ -43,7 +43,7 @@ const getProductQuantity = (idx) => {
 }
 
 const getTotalProductQuantity = () => {
-    return parseFloat(getCurrentItems().reduce((item, acc) => item[1] + acc, 0));
+    return parseFloat(getCurrentItems().reduce((acc, item) => item[1] + acc, 0));
 }
 
 const getBagItems = () => {

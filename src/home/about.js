@@ -1,21 +1,24 @@
 import storeItems from '../storeItems.json';
 
-const preview_container = document.getElementById('item-preview-container');
+const storeCardContainer = document.getElementById('item-preview-container');
 
+
+// Gets the 6 first products then places them on the grid
 document.addEventListener('DOMContentLoaded', () => {
-    storeItems.slice(0, 6).forEach((item, idx) => {
-        const a = document.createElement('a');
-        a.style.gridArea = `item${idx + 1}`;
+    storeItems
+    .slice(0, 6)
+    .map((product, idx) => {
+        const cardContainer = document.createElement('a');
+        cardContainer.style.gridArea = `item${idx + 1}`;
 
-        const p = document.createElement('p');
-        p.innerText = item.name;
+        const cardText = document.createElement('p');
+        cardText.innerText = product.name;
+        cardContainer.appendChild(cardText);
 
-        const img = document.createElement('img')
-        img.src = item.images[0];
+        const cardBackgroundImage = document.createElement('img')
+        cardBackgroundImage.src = product.images[0];
+        cardContainer.appendChild(cardBackgroundImage);
 
-        a.appendChild(p);
-        a.appendChild(img);
-
-        preview_container.appendChild(a);
+        storeCardContainer.appendChild(cardContainer)
     })
 })
