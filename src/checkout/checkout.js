@@ -1,7 +1,8 @@
-import { changeProductQuantiy, getBagItems, getProductQuantity } from "../handlers/betterhandler"
+import { changeProductQuantiy, getBagItems, getProductQuantity, removeAllItems } from "../handlers/betterhandler"
 import storeItems from '../storeItems.json'
 
 const prodcontainer = document.getElementById('products');
+const checkoutButton = document.getElementById('checkout-button')
 
 document.addEventListener('DOMContentLoaded', () => {
     const items = getBagItems();
@@ -105,4 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
         prodcontainer.appendChild(container)
     })
 
+})
+
+checkoutButton.addEventListener('click', () => {
+    removeAllItems();
 })

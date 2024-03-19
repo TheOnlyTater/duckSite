@@ -589,6 +589,7 @@ var _betterhandler = require("../handlers/betterhandler");
 var _storeItemsJson = require("../storeItems.json");
 var _storeItemsJsonDefault = parcelHelpers.interopDefault(_storeItemsJson);
 const prodcontainer = document.getElementById("products");
+const checkoutButton = document.getElementById("checkout-button");
 document.addEventListener("DOMContentLoaded", ()=>{
     const items = (0, _betterhandler.getBagItems)();
     if (items.length == 0) {
@@ -663,11 +664,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
         prodcontainer.appendChild(container);
     });
 });
+checkoutButton.addEventListener("click", ()=>{
+    (0, _betterhandler.removeAllItems)();
+});
 
 },{"../handlers/betterhandler":"dYCnJ","../storeItems.json":"1O2RX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dYCnJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getProductPrice", ()=>getProductPrice);
+parcelHelpers.export(exports, "removeAllItems", ()=>removeAllItems);
 parcelHelpers.export(exports, "getCurrentPriceTotal", ()=>getCurrentPriceTotal);
 parcelHelpers.export(exports, "changeProductQuantiy", ()=>changeProductQuantiy);
 parcelHelpers.export(exports, "getProductQuantity", ()=>getProductQuantity);
@@ -718,9 +723,15 @@ const getBagItems = ()=>{
         ...getCurrentItems().filter((item)=>item[1] > 0)
     ];
 };
+const removeAllItems = ()=>{
+    updateItemsState(getCurrentItems().map((item)=>{
+        item[1] = 0;
+        return item;
+    }));
+};
 
 },{"../storeItems.json":"1O2RX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1O2RX":[function(require,module,exports) {
-module.exports = JSON.parse('[{"category":"cool duck","name":"sebastioans","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"543","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsa","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21},{"category":"cool duck","name":"dsada","price":453.65,"description":"dasdasdsadasdasd","images":["/quackatician.ee280f74.jpg","img2","img3"],"length":21,"width":21,"height":21,"weight":21}]');
+module.exports = JSON.parse('[{"category":"Hot Ducks","name":"Maxwell","price":39.99,"description":"Meet Maxwell, the summer-loving rubber duck ready to quack some code and make a splash with his quacktastic charm! #QuackinCool \uD83E\uDD86\u2600\uFE0F","images":["/cool-duck.png"],"length":20.5,"width":20.5,"height":20.5,"weight":22},{"category":"Average Ducks","name":"Joe Quacksmith","price":24.99,"description":"Introducing Joe Quacksmith: the unassuming coding virtuoso! Get ready for a quacky adventure in bath-time coding. #QuackSmartNotHard \uD83E\uDD86\uD83D\uDCBB","images":["/average-duck.webp"],"length":18,"width":19,"height":17,"weight":24},{"category":"Poltical Ducks","name":"Donald Duck","price":29.99,"description":"eet President Quack, the leader quacking with wisdom! Leading the nation of bath time with diplomacy and bubbles, he\'s ready to make bath time great again! \uD83E\uDD86\uD83C\uDDFA\uD83C\uDDF8 #MakeQuackingGreatAgain","images":["/quackatician.jpg"],"length":17.5,"width":18,"height":16,"weight":23},{"category":"cool duck","name":"The Duckfather","price":34.99,"description":"Meet The Duckfather, the duck you don\'t want to mess with! Known for his bathtime antics and mastermind quack plotting, he rules the tub with an iron beak. Better follow his rules! #TheDuckFather \uD83E\uDD86","images":["/quackster.c89dd700.jpg"],"length":19,"width":19.5,"height":18,"weight":25}]');
 
 },{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {

@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .map((product, idx) => {
         const cardContainer = document.createElement('a');
         cardContainer.style.gridArea = `item${idx + 1}`;
+        cardContainer.href = `template.html#id=${idx}`;
 
         const cardText = document.createElement('p');
         cardText.innerText = product.name;

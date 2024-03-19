@@ -601,6 +601,7 @@ const template = {
     name: document.querySelector(".product-name"),
     price: document.querySelector(".product-price"),
     description: document.querySelector(".product-description"),
+    image: document.getElementById("duck-image"),
     length: document.querySelector(".product-length"),
     width: document.querySelector(".product-width"),
     height: document.querySelector(".product-height"),
@@ -612,6 +613,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     template.name.textContent = item.name;
     template.price.textContent = "$" + item.price;
     template.description.textContent = item.description;
+    template.image.src = item.images[0];
     template.length.textContent = item.length;
     template.width.textContent = item.width;
     template.height.textContent = item.height;

@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         cardContainer.classList.add('store-card');
         cardContainer.href = `template.html#id=${idx}`;
 
-
         const backgroundImage = document.createElement('img');
         backgroundImage.src =  storeItem.images[0];
         cardContainer.appendChild(backgroundImage);

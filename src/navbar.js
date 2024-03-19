@@ -56,7 +56,6 @@ navbar.burgerMenuIcon.addEventListener('click', () => {
 /* HELPER FUNCTIONS */
 const updateBackTotal = () => {
     const quantity = getTotalProductQuantity();
-    console.log('tsdfs')
     if (quantity) {
         navbar.navbarBag.classList.remove('hidden');
         navbar.navbarBag.innerHTML = quantity;

@@ -22,6 +22,7 @@
 
 .products img {
     width: 45px;
+    height: 45px;
     background-color: white;
     border-radius: 50%;
 }
@@ -35,11 +36,13 @@
 
 .product-showcase {
     position: relative;
+    width: 600px;
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 2em;
-
+    font-family: poppins;
     padding: 1em;
 
     background-color: #88ccff;
@@ -73,6 +76,8 @@
 
 .remove-product > img {
     width: 40px;
+    height: 40px;
+    background-color: transparent;
 }
 
 .remove-product:hover .product-showcase {
@@ -260,11 +265,12 @@
 @media screen and (max-width: 1080px) {
     .checkout-container {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
     .form-container {
         width: 100vw;
         max-width: none;
+        height: 200px;
     }
     .information-form  {
         padding: 1em 0;
@@ -276,6 +282,7 @@
     }
     .products-container {
         margin-top: 7em;
+        min-height: 200px;
     }
 
     .credit-card-data,
@@ -296,16 +303,16 @@
 }
 
 @media screen and (max-width: 800px) {
-    .product-showcase {
-        width: 100%;
-        min-width: 300px;
-    }
 
-    .remove-product {
-        right: 10px;
+    .products-container {
+        padding: 0;
+        width: 100vw;
+        display: flex;
+        align-items: flex-start;
     }
-    .remove-product img {
-        background-color: #e7e3e3;
+    .product-showcase {
+
+        scale: .8;
     }
 
     .information-form > div {

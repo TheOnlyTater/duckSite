@@ -1,10 +1,11 @@
 @import './../main.css';
 
 .store-front-container {
+    min-height: 100vh;
     padding: 8em 2em;
     gap: 5em;
 
-    background-color: black;
+    background-color: var(--background-color);
     color: white;
 }
 
@@ -47,11 +48,18 @@
 }
 .store-card > div > h2 {
     transition: .5s;
-    font-size: 28px;
+    font-size: 21px;
+
+    margin-bottom: 1em;
 }
-.store-card:hover > div>h2,
-.store-card:active > div>h2{
-    scale: 1.2;
+.store-card > div > p {
+    font-size: 18px;
+    color: #fafafa;
+}
+
+.store-card:hover > div > h2,
+.store-card:active > div > h2{
+    scale: 1.1;
 }
 
 .store-card > img {

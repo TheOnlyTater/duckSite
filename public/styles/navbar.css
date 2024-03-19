@@ -83,7 +83,7 @@
 
 .user-bag > a > span {
     position: absolute;
-    right: -5px;
+    right: -20px;
     bottom: -15px;
 
     display: flex;
@@ -97,6 +97,7 @@
     background-color: red;
     font-size: 14px;
 }
+
 
 /*
 *   DUCK ANIMATION

@@ -1,7 +1,8 @@
 .store-front-container {
+  background-color: var(--background-color);
   color: #fff;
-  background-color: #000;
   gap: 5em;
+  min-height: 100vh;
   padding: 8em 2em;
 }
 
@@ -37,12 +38,18 @@
 }
 
 .store-card > div > h2 {
-  font-size: 28px;
+  margin-bottom: 1em;
+  font-size: 21px;
   transition: all .5s;
 }
 
+.store-card > div > p {
+  color: #fafafa;
+  font-size: 18px;
+}
+
 .store-card:hover > div > h2, .store-card:active > div > h2 {
-  scale: 1.2;
+  scale: 1.1;
 }
 
 .store-card > img {

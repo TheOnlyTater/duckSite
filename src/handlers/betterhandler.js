@@ -50,4 +50,14 @@ const getBagItems = () => {
     return [...getCurrentItems().filter((item) => item[1] > 0)];
 }
 
-export {getProductPrice, getCurrentPriceTotal, changeProductQuantiy, getProductQuantity, getBagItems, getTotalProductQuantity}
+const removeAllItems = () => {
+    updateItemsState(
+        getCurrentItems()
+            .map(item => {
+                item[1] = 0;
+                return item;
+            })
+    );
+}
+
+export {getProductPrice, removeAllItems, getCurrentPriceTotal, changeProductQuantiy, getProductQuantity, getBagItems, getTotalProductQuantity}

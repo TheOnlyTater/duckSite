@@ -16,7 +16,7 @@
 
     width: 100vw;
     height: 100vh;
-    min-height: 900px;
+    min-height: 1100px;
 
     font-family: poppins;
     line-height: 1.2;
@@ -32,7 +32,10 @@
     width: 500px;
     object-fit: fill;
 
+    border-radius: 5px;
+
     max-height: 500px;
+    min-height: 400px;
 }
 
 .product-info {
@@ -48,13 +51,11 @@
 .title-up {
     font-weight: 700;
     font-size: 13px;
-
-    text-transform: uppercase;
 }
 
-.product-name {
-    font-weight: 800;
-    font-size: 34px;
+.product-description {
+    max-width: 350px;
+    line-height: 30px;
 }
 
 .product-price {

@@ -30,7 +30,7 @@
     margin: 0;
 }
 
-body {
+body, html {
     font-family: "Sixtyfour", sans-serif;
     overflow-x: hidden;
     width: 100vw;

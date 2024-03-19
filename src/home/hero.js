@@ -1,7 +1,7 @@
 
 // Slide show setup
 let swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
+    spaceBetween: 20,
     centeredSlides: true,
     autoplay: {
         delay: 12000,
