@@ -25,6 +25,9 @@
     z-index: 1;
 }
 
+
+/* EACH BUBBLE GIVEN RANDOM POSITION TO START FROM */
+
 .bubbles-container > .bubble:first-child {
     left: 10%;
     opacity: .5;

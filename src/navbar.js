@@ -1,11 +1,5 @@
 import { getTotalProductQuantity } from './handlers/betterhandler';
 
-// SIN WAVE CONSTANTS A * sin(c * x + p) + d
-const A = 5;
-const c = 1;
-const p = 1;
-const d = 1;
-
 const navbar = {
     navbarBag: document.getElementById('bag-item-counter') || null,
     burgerMenuIcon: document.getElementById('burger-menu') || null,
@@ -15,22 +9,18 @@ const navbar = {
 // DEBUG
 // checks if element failed to load
 // comment out in prod
-document.addEventListener('DOMContentLoaded', () => {
-    if (Object.keys(navbar).filter((key) => navbar[key] == null).length > 0) {
-        console.error('FAILED TO LOAD NAVBAR!');
-    }
-})
+//document.addEventListener('DOMContentLoaded', () => {
+//    if (Object.keys(navbar).filter((key) => navbar[key] == null).length > 0) {
+//      console.error('FAILED TO LOAD NAVBAR!');
+//    }
+//})
 
 
 // navbar initalization
 document.addEventListener('DOMContentLoaded', () => {
     updateBackTotal(); // get bag total on page load
-
-    // navbar duck progress
-    // shows how much you have progressed thru the page
-
-    
 })
+
 // NOTE: updates the new bag total each time storage is changed
 window.addEventListener('storageUpdated', () => updateBackTotal())
 

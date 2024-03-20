@@ -1,6 +1,11 @@
 @import './../main.css';
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
+/*
+ *  CHECKOUT.css:
+ *
+ */
+
 .checkout-container {
     display: flex;
     gap: 6em;
@@ -33,6 +38,10 @@
     flex-direction: column;
     gap: 2em;
 }
+
+/*
+ *  PRODUCT CONTAINER
+ */
 
 .product-showcase {
     position: relative;
@@ -85,19 +94,7 @@
 }
 
 
-/* INPUT SIZING CLASSES */
-
-.small-input {
-    width: 50%;
-}
-
-.large-input {
-    width: 80%;
-}
-
 /*  INPUT STYLING */
-
-
 .checkout-input {
     display: flex;
     gap: .25em;
@@ -130,7 +127,6 @@
 }
 
 /* credit card input */
-
 .credit-card-data {
     width: 80%;
 
@@ -180,8 +176,6 @@
     border-bottom: 1px solid white;
 }
 
-
-
 /* form styling */
 
 .form-container {
@@ -218,6 +212,25 @@
     justify-content: space-evenly;
 }
 
+.information-form button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 50vw;
+    max-width: 450px;
+
+    border-radius: 0;
+    border: none;
+    padding: 1.5em 1em;
+
+    color: black;
+    background-color: var(--primary-color);
+
+    cursor: pointer;
+}
+
+/* EMPTY BAG STYLING */
 .empty-bag {
     position: absolute;
     left: 25%;
@@ -244,23 +257,6 @@
     width: 180px;
 }
 
-.information-form button {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 50vw;
-    max-width: 450px;
-
-    border-radius: 0;
-    border: none;
-    padding: 1.5em 1em;
-
-    color: black;
-    background-color: var(--primary-color);
-
-    cursor: pointer;
-}
 
 @media screen and (max-width: 1080px) {
     .checkout-container {

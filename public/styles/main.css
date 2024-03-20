@@ -8,7 +8,7 @@
     --navbutton-primary: #000000;
 
     --background-color: #181818;
-    --text-color: #000;
+    --text-color: #fafafa;
 
     --link-color: #000;
     --hover-color: #000;
@@ -17,11 +17,6 @@
     --button-border-color: #000000;
     --button-color: #ff9100;
     --button-text-color: #000000;
-    
-    --error-color: #000;
-    --success-color: #000;
-    --warning-color: #000;
-    --info-color: #121212;
 }
 
 * {

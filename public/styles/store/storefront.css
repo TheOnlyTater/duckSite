@@ -1,5 +1,11 @@
 @import './../main.css';
 
+/*
+ *  storefront.css:
+ *  - storefron styling
+ *  - storefront cards
+ */
+
 .store-front-container {
     min-height: 100vh;
     padding: 8em 2em;
@@ -22,6 +28,9 @@
     gap: 5em;
 }
 
+/*
+ * STORE CARD 
+ */
 .store-card {
     position: relative;
     height: 350px;

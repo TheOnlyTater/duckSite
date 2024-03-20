@@ -1,5 +1,9 @@
 @import '../main.css';
 
+/*
+ *  DUCK ANIMATION AND ISLAND POSITIONING
+ */
+
 .about-section {
     position: relative;
     min-height: 800px;

@@ -25,6 +25,7 @@ const template = {
     weight: document.querySelector('.product-weight')
 }
 
+// generates product page from json
 document.addEventListener('DOMContentLoaded', () => {
     const item = storeItems[itemIDX];
 
@@ -48,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         addItemsCart.count.textContent = getProductQuantity(itemIDX);
     }
 })
-
+// enables multi button on start
 document.addEventListener('click', () => {
     addItemsCart.count.textContent = getProductQuantity(itemIDX);
     if (getProductQuantity(itemIDX) < 1)

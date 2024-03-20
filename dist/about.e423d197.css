@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.make-absolute {
+  position: absolute;
+}
+
 .flex-center {
   justify-content: center;
   align-items: center;
@@ -48,6 +52,14 @@
 
 .full-width {
   width: 100%;
+}
+
+.small-input {
+  width: 50%;
+}
+
+.large-input {
+  width: 80%;
 }
 
 .focus-elements {

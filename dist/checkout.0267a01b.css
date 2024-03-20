@@ -77,14 +77,6 @@
   opacity: .5;
 }
 
-.small-input {
-  width: 50%;
-}
-
-.large-input {
-  width: 80%;
-}
-
 .checkout-input {
   flex-direction: column;
   gap: .25em;
@@ -186,6 +178,20 @@
   display: flex;
 }
 
+.information-form button {
+  color: #000;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  width: 50vw;
+  max-width: 450px;
+  padding: 1.5em 1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .empty-bag {
   flex-direction: column;
   justify-content: center;
@@ -209,20 +215,6 @@
   font-family: poppins;
   font-size: 25px;
   line-height: 1.2;
-}
-
-.information-form button {
-  color: #000;
-  background-color: var(--primary-color);
-  cursor: pointer;
-  border: none;
-  border-radius: 0;
-  width: 50vw;
-  max-width: 450px;
-  padding: 1.5em 1em;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 @media screen and (width <= 1080px) {

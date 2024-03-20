@@ -7,6 +7,14 @@
   visibility: hidden;
 }
 
+/*  
+ *   template.css:
+ *   - template styling
+ *   - single button styling
+ *   - multi button styling
+ *   - description animation and styling
+ */
+
 .store-page {
     display: flex;
     align-items: center;
@@ -67,6 +75,10 @@
     position: relative;
 }
 
+
+/*
+ *  DESCRYPTION STYLING & ANIMATION
+ */
 .desc-btn:checked + label,
 .desc-btn:not(:checked) + label {
     position: relative;
@@ -124,6 +136,9 @@
     transform: translateY(0);
 }
 
+/*
+ *  STORE SINGEL BUTTON STYLING
+ */
 .store-button {
     position: relative;
 
@@ -179,6 +194,10 @@
     box-shadow: 0 5px 20px 0 #FFFF00;
     background-color: var(--button-color);
 }
+
+/*
+ *  STORE MULTI BUTTON STYLING
+ */
 
 .multi-button {
     display: flex;

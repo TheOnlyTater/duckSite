@@ -9,12 +9,6 @@
   position: fixed;
 }
 
-.navbar-logo {
-  z-index: 5;
-  display: block;
-  position: relative;
-}
-
 .nav-quick-links {
   align-items: center;
   gap: 3em;
@@ -27,8 +21,10 @@
   height: 40px;
 }
 
-#traveling-duck {
-  position: absolute;
+.navbar-logo {
+  z-index: 5;
+  display: block;
+  position: relative;
 }
 
 .navbar-button {
@@ -55,6 +51,15 @@
   position: absolute;
   top: -10px;
   left: 40%;
+}
+
+.waves-container {
+  z-index: 4;
+  width: 100vw;
+  height: 76px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .user-bag > a > span {
@@ -164,7 +169,7 @@
 }
 
 .burger-in-focus {
-  z-index: 99999;
+  z-index: 5;
   background-color: #ffffffbf;
   flex-direction: column;
   justify-content: center;
@@ -180,15 +185,14 @@
 }
 
 .hamburger-menu-button {
-  background-color: #fff;
-  border: 2px dashed #000;
+  background-color: var(--button-color);
   width: calc(60px + 10em);
   height: calc(40px + 5em);
   transition: all .25s;
 }
 
 .hamburger-menu-button a {
-  color: #000;
+  color: var(--text-color);
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -198,27 +202,18 @@
 }
 
 .hamburger-menu-button:last-child a {
-  background-image: url("store-bag-icon.9422d95b.svg");
+  background-image: url("white-store-bag-icon.d1bae316.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
 }
 
 .hamburger-menu-button:last-child a:hover {
-  background-image: url("white-store-bag-icon.d1bae316.png");
+  background-image: url("store-bag-icon.9422d95b.svg");
 }
 
 .hamburger-menu-button:hover, .hamburger-menu-button:hover a {
-  color: #fff;
-  background-color: #000;
-}
-
-.waves-container {
-  z-index: 4;
-  width: 100vw;
-  height: 76px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  background-color: var(--primary-color);
+  color: #121212;
 }
 /*# sourceMappingURL=about.aa665d9f.css.map */

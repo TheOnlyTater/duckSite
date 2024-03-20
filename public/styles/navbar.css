@@ -1,8 +1,13 @@
 @import "./main.css";
 
 /*
-    TODO OPTIMIZE AND MAKE GOOD TIMINGS
-*/
+ *  navbar.css:
+ *  - navbar styling
+ *  - burger menu
+ *  - wave styling
+ *  - bag styling
+ */
+
 
 .navbar {
     position: fixed;
@@ -18,31 +23,27 @@
     z-index: 9999;
 }
 
-
-.navbar-logo {
-    display: block;
-    position:relative;
-    z-index: 5;
-}
 .nav-quick-links {
     display: flex;
     align-items: center;
     gap: 3em;
-
 }
 
+
 /*
- * NAVBAR IMAGE SETTINGS 
+ * NAVBAR IMAGEs 
  */
-.navbar img {
+
+ .navbar img {
     width: 40px;
     height: 40px;
     z-index: 5;
 }
 
-
-#traveling-duck {
-    position: absolute;
+.navbar-logo {
+    display: block;
+    position:relative;
+    z-index: 5;
 }
 
 /*
@@ -77,6 +78,18 @@
     animation: duck-pop-up .5s linear forwards;
 }
 
+/* NAVBAR WAVE */
+.waves-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100vw;
+    height: 76px;
+    
+    z-index: 4;
+}
+
 /*
  *  BAG
  */
@@ -100,7 +113,7 @@
 
 
 /*
-*   DUCK ANIMATION
+*   DUCK BUTTON ANIMATION
 */
 
 @keyframes duck-pop-up {
@@ -148,6 +161,10 @@
 
     transition: all .3s ease;
 }
+
+/*
+ *  CLOSE BURGER MENU ICON
+ */
 
 .burger-icon span:first-child {
     top: 0;
@@ -199,6 +216,10 @@
     }
 }
 
+/*
+ *  MAKE BURGER MENU FULL SCREEN
+ */
+
 .burger-in-focus {
     position: fixed;
     top: 0;
@@ -216,7 +237,7 @@
     background-color: rgba(255, 255, 255, 0.75);
     overflow: hidden;
 
-    z-index: 99999;
+    z-index: 5;
 }
 
 .hamburger-menu-button {
@@ -224,8 +245,7 @@
     width: calc(60px + 10em);
     height: calc(40px + 5em);
 
-    border: 2px dashed black;
-    background-color: white;
+    background-color: var(--button-color);;
     transition: .25s;
 }
 
@@ -235,7 +255,7 @@
     justify-content: center;
 
     display: block;
-    color: black;
+    color: var(--text-color);
     width: 100%;
     height: 100%;
 }
@@ -243,27 +263,18 @@
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
-    background-image: url('../../assets/store-bag-icon.svg');
+    background-image: url('../../assets/white-store-bag-icon.png');
+
 }
 .hamburger-menu-button:last-child a:hover {
-    background-image: url('../../assets/white-store-bag-icon.png');
+    background-image: url('../../assets/store-bag-icon.svg');
+
 }
 
 .hamburger-menu-button:hover,
 .hamburger-menu-button:hover a {
-    background-color: black;
-    color: white;
+    background-color: var(--primary-color);
+    color: #121212;
 }
 
 
-/* NAVBAR HIDE ANIMATION */
-.waves-container {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    width: 100vw;
-    height: 76px;
-    
-    z-index: 4;
-}

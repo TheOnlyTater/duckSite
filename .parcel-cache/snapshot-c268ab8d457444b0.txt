@@ -1,40 +1,41 @@
-5980
-59/home/godisdead/school-projects/duckSite/dist/checkout.html1710871162199603619 0
-70/home/godisdead/school-projects/duckSite/dist/checkout.a8f3a420.js.map1710871150448603968 0
-66/home/godisdead/school-projects/duckSite/dist/checkout.a8f3a420.js1710871150447603968 0
-67/home/godisdead/school-projects/duckSite/dist/about.ad585765.js.map1710871142462604205 0
-63/home/godisdead/school-projects/duckSite/dist/about.ad585765.js1710871142461604205 0
-64/home/godisdead/school-projects/duckSite/dist/Store.6f81ba2b.css1710870717303516421 0
-71/home/godisdead/school-projects/duckSite/dist/checkout.0267a01b.css.map1710870639935476640 0
-67/home/godisdead/school-projects/duckSite/dist/checkout.0267a01b.css1710870639935476640 0
-64/home/godisdead/school-projects/duckSite/dist/index.e960bebe.css1710869847275650825 0
-63/home/godisdead/school-projects/duckSite/dist/index.615cfb4d.js1710869409532661250 0
-68/home/godisdead/school-projects/duckSite/dist/index.439d039f.css.map1710869316726729900 0
-68/home/godisdead/school-projects/duckSite/dist/about.93cd5ab4.css.map1710869316726729900 0
-64/home/godisdead/school-projects/duckSite/dist/index.0a6456d7.css1710869316723729901 0
-64/home/godisdead/school-projects/duckSite/dist/index.439d039f.css1710869316723729901 0
-64/home/godisdead/school-projects/duckSite/dist/about.93cd5ab4.css1710869316723729901 0
-68/home/godisdead/school-projects/duckSite/dist/index.43b3ab1f.css.map1710869316714729906 0
-68/home/godisdead/school-projects/duckSite/dist/about.e423d197.css.map1710869316714729906 0
-68/home/godisdead/school-projects/duckSite/dist/about.aa665d9f.css.map1710869316714729906 0
-64/home/godisdead/school-projects/duckSite/dist/index.43b3ab1f.css1710869316709729909 0
-70/home/godisdead/school-projects/duckSite/dist/template.104d3fe4.js.map1710869316701729914 0
-68/home/godisdead/school-projects/duckSite/dist/about.0090f3a3.css.map1710869316701729914 0
-68/home/godisdead/school-projects/duckSite/dist/about.6441dde9.css.map1710869316701729914 0
-64/home/godisdead/school-projects/duckSite/dist/about.6441dde9.css1710869316698729915 0
-66/home/godisdead/school-projects/duckSite/dist/twitter.17c78c59.png1710869316691729919 0
-59/home/godisdead/school-projects/duckSite/dist/template.html1710869316688729921 0
-63/home/godisdead/school-projects/duckSite/dist/index.1cffe0b8.js1710869316683729924 0
-56/home/godisdead/school-projects/duckSite/dist/about.html1710869316668729932 0
-56/home/godisdead/school-projects/duckSite/dist/Store.html1710869316639729948 0
-65/home/godisdead/school-projects/duckSite/dist/tiktok.08b8fbfc.svg1710869316635729951 0
-72/home/godisdead/school-projects/duckSite/dist/typical duck.3edb8b07.webp1710869316626729956 0
-71/home/godisdead/school-projects/duckSite/dist/quackatician.ee280f74.jpg1710869316619729960 0
-72/home/godisdead/school-projects/duckSite/dist/progress-duck.1ec7e6df.png1710869316617729961 0
+5983
+71/home/godisdead/school-projects/duckSite/dist/checkout.0090f3a3.css.map1710914904357442805 0
+67/home/godisdead/school-projects/duckSite/dist/about.ad585765.js.map1710881508799846527 0
+63/home/godisdead/school-projects/duckSite/dist/about.ad585765.js1710881508799846527 0
+56/home/godisdead/school-projects/duckSite/dist/about.html1710881470362020222 0
+71/home/godisdead/school-projects/duckSite/dist/checkout.0267a01b.css.map1710880632605836496 0
+67/home/godisdead/school-projects/duckSite/dist/checkout.0267a01b.css1710880632604836497 0
+68/home/godisdead/school-projects/duckSite/dist/about.93cd5ab4.css.map1710880456728997697 0
+68/home/godisdead/school-projects/duckSite/dist/index.439d039f.css.map1710880456728997697 0
+64/home/godisdead/school-projects/duckSite/dist/index.0a6456d7.css1710880456727997700 0
+64/home/godisdead/school-projects/duckSite/dist/about.93cd5ab4.css1710880456727997700 0
+64/home/godisdead/school-projects/duckSite/dist/index.439d039f.css1710880456727997700 0
+68/home/godisdead/school-projects/duckSite/dist/about.0090f3a3.css.map1710880456714997730 0
+68/home/godisdead/school-projects/duckSite/dist/about.6441dde9.css.map1710880456714997730 0
+64/home/godisdead/school-projects/duckSite/dist/about.6441dde9.css1710880456713997733 0
+64/home/godisdead/school-projects/duckSite/dist/Store.6f81ba2b.css1710880456710997740 0
+68/home/godisdead/school-projects/duckSite/dist/about.e423d197.css.map1710880456709997742 0
+68/home/godisdead/school-projects/duckSite/dist/index.43b3ab1f.css.map1710880456709997742 0
+68/home/godisdead/school-projects/duckSite/dist/about.aa665d9f.css.map1710880456709997742 0
+64/home/godisdead/school-projects/duckSite/dist/index.43b3ab1f.css1710880456707997747 0
+64/home/godisdead/school-projects/duckSite/dist/index.e960bebe.css1710880456707997747 0
+59/home/godisdead/school-projects/duckSite/dist/checkout.html1710880456703997756 0
+63/home/godisdead/school-projects/duckSite/dist/index.1cffe0b8.js1710880456693997780 0
+65/home/godisdead/school-projects/duckSite/dist/tiktok.08b8fbfc.svg1710880456669997836 0
+70/home/godisdead/school-projects/duckSite/dist/checkout.a8f3a420.js.map1710880456646997890 0
+66/home/godisdead/school-projects/duckSite/dist/checkout.a8f3a420.js1710880456644997895 0
+59/home/godisdead/school-projects/duckSite/dist/template.html1710880456644997895 0
+56/home/godisdead/school-projects/duckSite/dist/Store.html1710880456632997923 0
+70/home/godisdead/school-projects/duckSite/dist/template.104d3fe4.js.map1710880456594998012 0
+63/home/godisdead/school-projects/duckSite/dist/index.615cfb4d.js1710880456593998015 0
+66/home/godisdead/school-projects/duckSite/dist/twitter.17c78c59.png1710880456554998106 0
+72/home/godisdead/school-projects/duckSite/dist/progress-duck.1ec7e6df.png1710880456512998205 0
+71/home/godisdead/school-projects/duckSite/dist/quackatician.ee280f74.jpg1710880456471998301 0
+72/home/godisdead/school-projects/duckSite/dist/typical duck.3edb8b07.webp1710880456466998313 0
 62/home/godisdead/school-projects/duckSite/dist/quackatician.jpg1710867478654044326 0
 63/home/godisdead/school-projects/duckSite/dist/average-duck.webp1710867478642044351 0
 59/home/godisdead/school-projects/duckSite/dist/cool-duck.png1710867478730044164 0
-45/home/godisdead/school-projects/duckSite/dist1710871162199603619 1
+45/home/godisdead/school-projects/duckSite/dist1710881508800846526 1
 50/home/godisdead/school-projects/duckSite/.DS_Store1710527968242400909 0
 56/home/godisdead/school-projects/duckSite/assets/products1710867035450916651 1
 50/home/godisdead/school-projects/duckSite/assets/UI1710867028766927779 1
@@ -589,7 +590,7 @@
 115/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/css-select/lib/types.d.ts1709832754844564631 0
 95/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/src/_array_without_holes.mjs1709832752331569708 0
 80/home/godisdead/school-projects/duckSite/node_modules/css-tree/cjs/syntax/atrule1709832752048570280 1
-64/home/godisdead/school-projects/duckSite/dist/about.aa665d9f.css1710869316709729909 0
+64/home/godisdead/school-projects/duckSite/dist/about.aa665d9f.css1710880456707997747 0
 74/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/_/index1709832752326569718 1
 86/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/_/_write_only_error1709832752324569722 1
 90/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/tls1-1.js1709832752405569558 0
@@ -610,7 +611,7 @@
 114/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/_/_object_without_properties_loose/package.json1709832752272569827 0
 80/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/test/fixtures1709832754970564376 1
 82/home/godisdead/school-projects/duckSite/node_modules/@parcel/workers/src/index.js1709832752863568634 0
-68/home/godisdead/school-projects/duckSite/dist/Store.6f81ba2b.css.map1710870717303516421 0
+68/home/godisdead/school-projects/duckSite/dist/Store.6f81ba2b.css.map1710880456711997737 0
 69/home/godisdead/school-projects/duckSite/node_modules/@parcel/watcher1709832752201569971 1
 71/home/godisdead/school-projects/duckSite/node_modules/@swc/core/util.js1709832751841570698 0
 76/home/godisdead/school-projects/duckSite/node_modules/tslib/modules/index.js1709832751777570828 0
@@ -632,7 +633,7 @@
 116/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/pseudo1709832754893564532 1
 96/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/_/_initializer_warning_helper1709832752238569896 1
 128/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/svgo/plugins/convertEllipseToCircle.js1709832754851564617 0
-67/home/godisdead/school-projects/duckSite/dist/index.615cfb4d.js.map1710869409533661249 0
+67/home/godisdead/school-projects/duckSite/dist/index.615cfb4d.js.map1710880456594998012 0
 134/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/node/SelectorList.js1709832754929564459 0
 99/home/godisdead/school-projects/duckSite/node_modules/csso/node_modules/css-tree/lib/lexer/Lexer.js1709832754592565140 0
 102/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/css-initial-letter.js1709832752213569947 0
@@ -721,7 +722,7 @@
 83/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/src/constants.js1709832754925564467 0
 113/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/csso/lib/replace/atrule1709832754826564667 1
 99/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/src/_class_private_field_get.mjs1709832752339569692 0
-61/home/godisdead/school-projects/duckSite/public/template.html1710880446944020684 0
+61/home/godisdead/school-projects/duckSite/public/template.html1710913363952379491 0
 91/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/src/_define_property.mjs1709832752351569668 0
 98/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/esm/_interop_require_default.js1709832752033570310 0
 83/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/esm/_inherits.js1709832752030570316 0
@@ -782,7 +783,7 @@
 78/home/godisdead/school-projects/duckSite/node_modules/picocolors/picocolors.js1709832751789570803 0
 102/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/cjs/_initializer_warning_helper.cjs1709832751924570530 0
 80/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/lib/worker.js1709832754960564396 0
-67/home/godisdead/school-projects/duckSite/dist/Store.a438817c.js.map1710869389619677944 0
+67/home/godisdead/school-projects/duckSite/dist/Store.a438817c.js.map1710880456594998012 0
 106/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/declarative-shadow-dom.js1709832752279569813 0
 84/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/cjs/_inherits.cjs1709832751923570532 0
 82/home/godisdead/school-projects/duckSite/node_modules/svgo/plugins/cleanupAttrs.js1709832752078570219 0
@@ -886,7 +887,7 @@
 95/home/godisdead/school-projects/duckSite/node_modules/@parcel/packager-html/src/HTMLPackager.js1709832754208565916 0
 102/home/godisdead/school-projects/duckSite/node_modules/@babel/highlight/node_modules/color-name/test.js1709832754666564991 0
 111/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/cjs/_create_for_of_iterator_helper_loose.cjs1709832751911570557 0
-67/home/godisdead/school-projects/duckSite/dist/template.ef78557d.css1710869316683729924 0
+67/home/godisdead/school-projects/duckSite/dist/template.ef78557d.css1710880456710997740 0
 91/home/godisdead/school-projects/duckSite/node_modules/@parcel/reporter-cli/src/logLevels.js1709832754689564944 0
 93/home/godisdead/school-projects/duckSite/node_modules/@parcel/reporter-cli/src/CLIReporter.js1709832754689564944 0
 80/home/godisdead/school-projects/duckSite/node_modules/@parcel/graph/lib/types.js1709832752921568516 0
@@ -921,7 +922,7 @@
 127/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/mdn-data/css/syntaxes.schema.json1709832754856564607 0
 90/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/cjs/_inherits_loose.cjs1709832751922570535 0
 125/home/godisdead/school-projects/duckSite/node_modules/@parcel/package-manager/test/fixtures/has-foo/node_modules/foo/index.js1709832754802564716 0
-63/home/godisdead/school-projects/duckSite/dist/Store.a438817c.js1710869389618677945 0
+63/home/godisdead/school-projects/duckSite/dist/Store.a438817c.js1710880456593998015 0
 116/home/godisdead/school-projects/duckSite/node_modules/@parcel/package-manager/test/fixtures/has-foo/node_modules/foo1709832754812564696 1
 82/home/godisdead/school-projects/duckSite/node_modules/@parcel/package-manager/test1709832754809564702 1
 108/home/godisdead/school-projects/duckSite/node_modules/@parcel/package-manager/src/validateModuleSpecifier.js1709832754809564702 0
@@ -980,7 +981,7 @@
 81/home/godisdead/school-projects/duckSite/node_modules/css-select/lib/index.js.map1709832751959570460 0
 85/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/src/Environment.js1709832754930564457 0
 88/home/godisdead/school-projects/duckSite/node_modules/css-tree/lib/syntax/scope/value.js1709832752246569880 0
-61/home/godisdead/school-projects/duckSite/public/checkout.html1710880426761068096 0
+61/home/godisdead/school-projects/duckSite/public/checkout.html1710915303589688744 0
 93/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/xhtmlsmil.js1709832752412569544 0
 109/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/_/_initializer_warning_helper/package.json1709832752238569896 0
 84/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/src/Dependency.js1709832754927564463 0
@@ -1010,7 +1011,7 @@
 90/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/lib/UncommittedAsset.js1709832754958564401 0
 66/home/godisdead/school-projects/duckSite/node_modules/lmdb/read.js1709832752335569700 0
 88/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/lib/Transformation.js1709832754956564404 0
-71/home/godisdead/school-projects/duckSite/dist/template.ef78557d.css.map1710869316687729921 0
+71/home/godisdead/school-projects/duckSite/dist/template.ef78557d.css.map1710880456711997737 0
 70/home/godisdead/school-projects/duckSite/node_modules/js-yaml/lib/type1709832751974570429 1
 96/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/lib/serializerCore.browser.js1709832754948564421 0
 102/home/godisdead/school-projects/duckSite/node_modules/csso/node_modules/css-tree/cjs/syntax/create.cjs1709832754558565209 0
@@ -1092,7 +1093,7 @@
 92/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/test/fixtures/main-global1709832754969564378 1
 92/home/godisdead/school-projects/duckSite/node_modules/ordered-binary/.nyc_output/processinfo1709832751917570544 1
 112/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/test/fixtures/library-scopehoist/package.json1709832754969564378 0
-66/home/godisdead/school-projects/duckSite/public/styles/Buttons.css1710437299261468198 0
+66/home/godisdead/school-projects/duckSite/public/styles/Buttons.css1710914329224512899 0
 119/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/test/fixtures/library-custom-scopehoist/package.json1709832754968564380 0
 98/home/godisdead/school-projects/duckSite/node_modules/@babel/helper-validator-identifier/README.md1709832751859570662 0
 76/home/godisdead/school-projects/duckSite/node_modules/domutils/lib/legacy.js1709832751846570688 0
@@ -1113,7 +1114,7 @@
 86/home/godisdead/school-projects/duckSite/node_modules/@parcel/workers/test/integration1709832752858568644 1
 106/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/_/_interop_require_default/package.json1709832752243569886 0
 81/home/godisdead/school-projects/duckSite/node_modules/@parcel/reporter-dev-server1709832754672564978 1
-76/home/godisdead/school-projects/duckSite/dist/cool-duck-display.5228bbcb.png1710869316709729909 0
+76/home/godisdead/school-projects/duckSite/dist/cool-duck-display.5228bbcb.png1710880456558998097 0
 100/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/esm/_class_private_method_init.js1709832751992570393 0
 78/home/godisdead/school-projects/duckSite/node_modules/abortcontroller-polyfill1709832752236569900 1
 115/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/index.js1709832754916564485 0
@@ -1247,7 +1248,7 @@
 67/home/godisdead/school-projects/duckSite/node_modules/@parcel/graph1709832752921568516 1
 150/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/test/fixtures/local-plugin-config-pkg/node_modules/parcel-config-local/package.json1709832754969564378 0
 64/home/godisdead/school-projects/duckSite/node_modules/parse-json1709832751941570496 1
-71/home/godisdead/school-projects/duckSite/public/styles/helperStyles.css1710359012213914255 0
+71/home/godisdead/school-projects/duckSite/public/styles/helperStyles.css1710914800220656796 0
 78/home/godisdead/school-projects/duckSite/node_modules/cosmiconfig/package.json1709832752021570335 0
 106/home/godisdead/school-projects/duckSite/node_modules/@parcel/runtime-js/lib/helpers/worker/wasm-loader.js1709832753654567035 0
 100/home/godisdead/school-projects/duckSite/node_modules/lmdb/node_modules/node-addon-api/noexcept.gypi1709832754789564742 0
@@ -1325,7 +1326,7 @@
 70/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/src1709832752371569627 1
 85/home/godisdead/school-projects/duckSite/node_modules/@parcel/package-manager/LICENSE1709832754793564734 0
 73/home/godisdead/school-projects/duckSite/node_modules/@parcel/packager-js1709832754188565956 1
-58/home/godisdead/school-projects/duckSite/public/about.html1710881470291020594 0
+58/home/godisdead/school-projects/duckSite/public/about.html1710914904316442889 0
 91/home/godisdead/school-projects/duckSite/node_modules/@parcel/transformer-json/package.json1709832753446567456 0
 82/home/godisdead/school-projects/duckSite/node_modules/@parcel/transformer-json/src1709832753446567456 1
 82/home/godisdead/school-projects/duckSite/node_modules/@parcel/transformer-json/lib1709832753445567458 1
@@ -1390,7 +1391,7 @@
 88/home/godisdead/school-projects/duckSite/node_modules/@parcel/runtime-service-worker/src1709832753533567280 1
 123/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/restructure/utils.js1709832754873564572 0
 88/home/godisdead/school-projects/duckSite/node_modules/@parcel/runtime-service-worker/lib1709832753532567282 1
-70/home/godisdead/school-projects/duckSite/src/handlers/betterhandler.js1710871142389604208 0
+70/home/godisdead/school-projects/duckSite/src/handlers/betterhandler.js1710915126468002731 0
 103/home/godisdead/school-projects/duckSite/node_modules/ordered-binary/.nyc_output/processinfo/index.json1709832751918570543 0
 83/home/godisdead/school-projects/duckSite/node_modules/utility-types/dist/index.d.ts1709832752155570064 0
 92/home/godisdead/school-projects/duckSite/node_modules/@parcel/runtime-service-worker/LICENSE1709832753532567282 0
@@ -1542,7 +1543,7 @@
 97/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/test/fixtures/parcel/yarn.lock1709832754970564376 0
 85/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/regions/NR.js1709832752392569585 0
 93/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/wasm-simd.js1709832752409569550 0
-64/home/godisdead/school-projects/duckSite/dist/about.0090f3a3.css1710869316698729915 0
+64/home/godisdead/school-projects/duckSite/dist/about.0090f3a3.css1710880456713997733 0
 80/home/godisdead/school-projects/duckSite/node_modules/ordered-binary/.nyc_output1709832751914570551 1
 78/home/godisdead/school-projects/duckSite/node_modules/nth-check/lib/parse.d.ts1709832751908570563 0
 93/home/godisdead/school-projects/duckSite/node_modules/@parcel/watcher-linux-x64-glibc/LICENSE1709832752098570179 0
@@ -1644,7 +1645,7 @@
 111/home/godisdead/school-projects/duckSite/node_modules/@parcel/runtime-js/lib/helpers/browser/prefetch-loader.js1709832753653567037 0
 70/home/godisdead/school-projects/duckSite/node_modules/lmdb/src/env.cpp1709832752293569785 0
 85/home/godisdead/school-projects/duckSite/node_modules/@parcel/source-map/dist/node.js1709832752260569851 0
-65/home/godisdead/school-projects/duckSite/src/template/template.js1710867445662114357 0
+65/home/godisdead/school-projects/duckSite/src/template/template.js1710915306461684320 0
 90/home/godisdead/school-projects/duckSite/node_modules/@parcel/source-map/dist/node.js.flow1709832752255569862 0
 92/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/cjs/_get_prototype_of.cjs1709832751920570538 0
 108/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/utils1709832754880564558 1
@@ -1769,7 +1770,6 @@
 84/home/godisdead/school-projects/duckSite/node_modules/svgo/plugins/removeUnusedNS.js1709832752134570106 0
 87/home/godisdead/school-projects/duckSite/node_modules/@parcel/packager-css/package.json1709832754244565843 0
 88/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/lib/ReporterRunner.js1709832754945564427 0
-53/home/godisdead/school-projects/duckSite/src/index.js1709832723567627828 0
 121/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/lexer/Lexer.js1709832754919564479 0
 103/home/godisdead/school-projects/duckSite/node_modules/@parcel/rust/parcel-node-bindings.darwin-x64.node1709832754401565526 0
 121/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/lexer/index.js1709832754916564485 0
@@ -1892,7 +1892,7 @@
 126/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/svgo/plugins/removeOffCanvasPaths.js1709832754870564578 0
 120/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/definition-syntax1709832754905564508 1
 83/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/cjs/_dispose.cjs1709832751918570543 0
-68/home/godisdead/school-projects/duckSite/dist/index.0a6456d7.css.map1710869316726729900 0
+68/home/godisdead/school-projects/duckSite/dist/index.0a6456d7.css.map1710880456728997697 0
 108/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/test/fixtures/invalid-source-not-file/src1709832754931564455 1
 76/home/godisdead/school-projects/duckSite/node_modules/@parcel/types/index.js1709832752857568646 0
 104/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/background-clip-text.js1709832752068570239 0
@@ -1929,7 +1929,7 @@
 103/home/godisdead/school-projects/duckSite/node_modules/@parcel/source-map/dist/wasm-bindings-web.js.flow1709832752258569856 0
 83/home/godisdead/school-projects/duckSite/node_modules/svgo/plugins/removeViewBox.js1709832752139570096 0
 92/home/godisdead/school-projects/duckSite/node_modules/@parcel/watcher-linux-x64-musl/LICENSE1709832752099570177 0
-65/home/godisdead/school-projects/duckSite/public/styles/navbar.css1710880356113234062 0
+65/home/godisdead/school-projects/duckSite/public/styles/navbar.css1710914302621566026 0
 80/home/godisdead/school-projects/duckSite/node_modules/color-convert/CHANGELOG.md1709832751996570385 0
 107/home/godisdead/school-projects/duckSite/node_modules/@parcel/runtime-js/lib/helpers/browser/wasm-loader.js1709832753653567037 0
 80/home/godisdead/school-projects/duckSite/node_modules/htmlparser2/lib/index.d.ts1709832751903570573 0
@@ -1965,7 +1965,7 @@
 137/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/restructure/prepare/specificity.js1709832754870564578 0
 92/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/esm/_wrap_native_super.js1709832752058570260 0
 85/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/regions/SD.js1709832752401569567 0
-58/home/godisdead/school-projects/duckSite/public/index.html1710880440597035595 0
+58/home/godisdead/school-projects/duckSite/public/index.html1710913775492866780 0
 134/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/replace/property/font-weight.js1709832754865564589 0
 92/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/passkeys.js1709832752395569579 0
 115/home/godisdead/school-projects/duckSite/node_modules/@parcel/package-manager/test/fixtures/packages/a/package.json1709832754814564691 0
@@ -1992,14 +1992,14 @@
 80/home/godisdead/school-projects/duckSite/node_modules/node-addon-api/common.gypi1709832752098570179 0
 106/home/godisdead/school-projects/duckSite/node_modules/lmdb/dependencies/lmdb/libraries/liblmdb/mtest_enc.c1709832752269569833 0
 93/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/vibration.js1709832752408569552 0
-54/home/godisdead/school-projects/duckSite/src/navbar.js1710881508725846578 0
+54/home/godisdead/school-projects/duckSite/src/navbar.js1710915290626708703 0
 82/home/godisdead/school-projects/duckSite/node_modules/@parcel/transformer-svg/test1709832752967568423 1
 116/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/mdn-data/css/syntaxes.json1709832754810564700 0
 112/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/css-select/LICENSE1709832754863564592 0
 80/home/godisdead/school-projects/duckSite/node_modules/@parcel/diagnostic/LICENSE1709832754889564540 0
 97/home/godisdead/school-projects/duckSite/node_modules/htmlnano/lib/modules/removeOptionalTags.mjs1709832752278569815 0
 93/home/godisdead/school-projects/duckSite/node_modules/@parcel/transformer-babel/src/config.js1709832753603567138 0
-76/home/godisdead/school-projects/duckSite/public/styles/checkout/checkout.css1710880632559836532 0
+76/home/godisdead/school-projects/duckSite/public/styles/checkout/checkout.css1710914864222525283 0
 87/home/godisdead/school-projects/duckSite/node_modules/dom-serializer/lib/index.d.ts.map1709832751871570637 0
 101/home/godisdead/school-projects/duckSite/node_modules/@parcel/transformer-html/lib/HTMLTransformer.js1709832753609567126 0
 134/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/node/MediaFeature.js1709832754922564473 0
@@ -2208,7 +2208,7 @@
 76/home/godisdead/school-projects/duckSite/node_modules/css-select/lib/sort.js1709832751914570551 0
 76/home/godisdead/school-projects/duckSite/node_modules/@swc/core/Visitor.d.ts1709832751913570553 0
 107/home/godisdead/school-projects/duckSite/node_modules/css-select/node_modules/domutils/lib/stringify.js.map1709832754607565110 0
-56/home/godisdead/school-projects/duckSite/dist/index.html1710870866600593187 0
+56/home/godisdead/school-projects/duckSite/dist/index.html1710880456644997895 0
 88/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/heif.js1709832752347569676 0
 125/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/config/lexer.js1709832754877564564 0
 107/home/godisdead/school-projects/duckSite/node_modules/lmdb/dependencies/lmdb/libraries/liblmdb/mtest_enc2.c1709832752271569829 0
@@ -2243,7 +2243,7 @@
 85/home/godisdead/school-projects/duckSite/node_modules/@parcel/reporter-dev-server/lib1709832754672564978 1
 125/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/common/adopt-buffer.js1709832754819564682 0
 124/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/clean/TypeSelector.js1709832754870564578 0
-66/home/godisdead/school-projects/duckSite/public/styles/bubbles.css1710438299530342784 0
+66/home/godisdead/school-projects/duckSite/public/styles/bubbles.css1710914371144437880 0
 130/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/lexer/prepare-tokens.js1709832754927564463 0
 110/home/godisdead/school-projects/duckSite/node_modules/@parcel/runtime-react-refresh/lib/ReactRefreshRuntime.js1709832753624567096 0
 129/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/plugins/removeScriptElement.js1709832754908564502 0
@@ -2317,10 +2317,10 @@
 74/home/godisdead/school-projects/duckSite/node_modules/msgpackr/index.d.cts1709832752176570021 0
 59/home/godisdead/school-projects/duckSite/src/store/store.js1710869389535678015 0
 97/home/godisdead/school-projects/duckSite/node_modules/@parcel/workers/lib/threads/ThreadsChild.js1709832752865568630 0
-75/home/godisdead/school-projects/duckSite/public/styles/store/storefront.css1710870717260516399 0
+75/home/godisdead/school-projects/duckSite/public/styles/store/storefront.css1710914440635313523 0
 85/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/regions/MG.js1709832752389569591 0
 111/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/svgo/plugins/_path.js1709832754846564627 0
-69/home/godisdead/school-projects/duckSite/public/styles/infoIsland.css1710530762732854457 0
+69/home/godisdead/school-projects/duckSite/public/styles/infoIsland.css1710914174320832730 0
 98/home/godisdead/school-projects/duckSite/node_modules/@parcel/workers/src/threads/ThreadsWorker.js1709832752867568625 0
 85/home/godisdead/school-projects/duckSite/node_modules/dotenv-expand/dotenv-expand.png1709832752198569977 0
 67/home/godisdead/school-projects/duckSite/node_modules/utility-types1709832752151570072 1
@@ -2417,11 +2417,11 @@
 99/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/lib/public/MutableBundleGraph.js1709832754937564443 0
 90/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/_/_wrap_async_generator1709832752321569728 1
 85/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-image/LICENSE1709832754229565874 0
-79/home/godisdead/school-projects/duckSite/public/styles/productpage/template.css1710868309003666282 0
+79/home/godisdead/school-projects/duckSite/public/styles/productpage/template.css1710914632085981320 0
 85/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/_/_read_only_error1709832752278569815 1
 92/home/godisdead/school-projects/duckSite/node_modules/css-tree/cjs/syntax/scope/selector.cjs1709832752044570288 0
 80/home/godisdead/school-projects/duckSite/node_modules/css-tree/cjs/syntax/config1709832752061570254 1
-63/home/godisdead/school-projects/duckSite/public/styles/main.css1710879689825393857 0
+63/home/godisdead/school-projects/duckSite/public/styles/main.css1710914053908361828 0
 75/home/godisdead/school-projects/duckSite/node_modules/htmlnano/package.json1709832752243569886 0
 74/home/godisdead/school-projects/duckSite/node_modules/is-arrayish/index.js1709832751855570670 0
 111/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/dist/csso.js1709832754857564605 0
@@ -2449,7 +2449,7 @@
 84/home/godisdead/school-projects/duckSite/node_modules/@parcel/utils/src/ansi-html.js1709832754599565126 0
 96/home/godisdead/school-projects/duckSite/node_modules/@parcel/workers/lib/core-worker.browser.js1709832752860568640 0
 103/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/cjs/_check_private_redeclaration.cjs1709832751835570710 0
-73/home/godisdead/school-projects/duckSite/public/styles/homepage/about.css1710438726055871765 0
+73/home/godisdead/school-projects/duckSite/public/styles/homepage/about.css1710914726979807327 0
 102/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree1709832754935564447 1
 93/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/mpeg-dash.js1709832752390569589 0
 135/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/restructure/8-restructRuleset.js1709832754846564627 0
@@ -2473,7 +2473,7 @@
 92/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/src/_get_prototype_of.mjs1709832752353569664 0
 74/home/godisdead/school-projects/duckSite/node_modules/@parcel/workers/test1709832752868568624 1
 115/home/godisdead/school-projects/duckSite/node_modules/@parcel/package-manager/test/fixtures/has-a-not-yet-installed1709832754812564696 1
-72/home/godisdead/school-projects/duckSite/public/styles/homepage/hero.css1710134625304319281 0
+72/home/godisdead/school-projects/duckSite/public/styles/homepage/hero.css1710914675387904016 0
 79/home/godisdead/school-projects/duckSite/node_modules/@parcel/transformer-babel1709832753604567136 1
 120/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/mdn-data/css/units.schema.json1709832754812564696 0
 91/home/godisdead/school-projects/duckSite/node_modules/@parcel/transformer-babel/lib/flow.js1709832753604567136 0
@@ -2669,7 +2669,7 @@
 130/home/godisdead/school-projects/duckSite/node_modules/@parcel/source-map/parcel_sourcemap_node/artifacts/index.win32-x64-msvc.node1709832752384569601 0
 85/home/godisdead/school-projects/duckSite/node_modules/csso/cjs/clean/TypeSelector.cjs1709832751939570500 0
 81/home/godisdead/school-projects/duckSite/node_modules/@parcel/plugin/package.json1709832752881568597 0
-65/home/godisdead/school-projects/duckSite/src/checkout/checkout.js1710871150399603970 0
+65/home/godisdead/school-projects/duckSite/src/checkout/checkout.js1710915104755045107 0
 117/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/common/List.js1709832754877564564 0
 64/home/godisdead/school-projects/duckSite/node_modules/nullthrows1709832752255569862 1
 106/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/csso/lib/replace1709832754829564661 1
@@ -2830,7 +2830,7 @@
 121/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/css-select/lib/compile.d.ts.map1709832754831564657 0
 84/home/godisdead/school-projects/duckSite/node_modules/nth-check/lib/compile.d.ts.map1709832751854570672 0
 72/home/godisdead/school-projects/duckSite/node_modules/@parcel/plugin/src1709832752881568597 1
-68/home/godisdead/school-projects/duckSite/dist/instagram.6fb4e9cf.svg1710869316624729957 0
+68/home/godisdead/school-projects/duckSite/dist/instagram.6fb4e9cf.svg1710880456632997923 0
 119/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/replace/index.js1709832754866564586 0
 83/home/godisdead/school-projects/duckSite/node_modules/@lmdb/lmdb-linux-x64/index.js1709832752453569462 0
 81/home/godisdead/school-projects/duckSite/node_modules/node-addon-api/package.json1709832752128570118 0
@@ -3061,7 +3061,7 @@
 112/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/svgo/lib/svgo/jsAPI.js1709832754856564607 0
 103/home/godisdead/school-projects/duckSite/node_modules/lmdb/dependencies/lmdb/libraries/liblmdb/mtest3.c1709832752275569821 0
 81/home/godisdead/school-projects/duckSite/node_modules/svgo/plugins/removeXlink.js1709832752142570090 0
-66/home/godisdead/school-projects/duckSite/dist/template.104d3fe4.js1710869316698729915 0
+66/home/godisdead/school-projects/duckSite/dist/template.104d3fe4.js1710880456593998015 0
 112/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/generator1709832754894564530 1
 89/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/src/_object_spread.mjs1709832752361569648 0
 100/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/cookie-store-api.js1709832752132570110 0
@@ -3112,7 +3112,7 @@
 85/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/regions/SE.js1709832752401569567 0
 89/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/package.json1709832754208565916 0
 88/home/godisdead/school-projects/duckSite/node_modules/@parcel/packager-html/package.json1709832754209565914 0
-58/home/godisdead/school-projects/duckSite/public/Store.html1710880431898056029 0
+58/home/godisdead/school-projects/duckSite/public/Store.html1710913615109145912 0
 74/home/godisdead/school-projects/duckSite/node_modules/semver/bin/semver.js1709832752210569953 0
 133/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/node/Parentheses.js1709832754925564467 0
 97/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/_/_initializer_define_property1709832752235569902 1
@@ -3144,7 +3144,7 @@
 82/home/godisdead/school-projects/duckSite/node_modules/svgo/plugins/_collections.js1709832752074570227 0
 97/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/lib/TargetDescriptor.schema.js1709832754952564413 0
 123/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/mdn-data/css/syntaxes.schema.json1709832754811564697 0
-68/home/godisdead/school-projects/duckSite/dist/quackster.c89dd700.jpg1710869316639729948 0
+68/home/godisdead/school-projects/duckSite/dist/quackster.c89dd700.jpg1710880456545998127 0
 117/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/svgo/plugins/removeAttrs.js1709832754865564589 0
 119/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/csso/lib/restructure/index.js1709832754826564667 0
 80/home/godisdead/school-projects/duckSite/node_modules/@parcel/utils/.eslintrc.js1709832754599565126 0
@@ -3666,7 +3666,7 @@
 111/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/usage.js1709832754872564574 0
 104/home/godisdead/school-projects/duckSite/node_modules/htmlnano/lib/modules/collapseBooleanAttributes.mjs1709832752268569835 0
 106/home/godisdead/school-projects/duckSite/node_modules/@babel/code-frame/node_modules/color-name/.npmignore1709832754736564849 0
-67/home/godisdead/school-projects/duckSite/dist/index.1cffe0b8.js.map1710869316687729921 0
+67/home/godisdead/school-projects/duckSite/dist/index.1cffe0b8.js.map1710880456694997777 0
 103/home/godisdead/school-projects/duckSite/node_modules/@babel/code-frame/node_modules/color-name/test.js1709832754737564847 0
 104/home/godisdead/school-projects/duckSite/node_modules/csso/node_modules/css-tree/cjs/tokenizer/utils.cjs1709832754571565183 0
 93/home/godisdead/school-projects/duckSite/node_modules/@babel/code-frame/node_modules/has-flag1709832754737564847 1
@@ -3756,7 +3756,7 @@
 76/home/godisdead/school-projects/duckSite/node_modules/term-size/vendor/macos1709832751792570797 1
 92/home/godisdead/school-projects/duckSite/node_modules/csso/lib/restructure/7-mergeRuleset.js1709832751957570464 0
 107/home/godisdead/school-projects/duckSite/node_modules/@babel/helper-validator-identifier/lib/keyword.js.map1709832751891570597 0
-68/home/godisdead/school-projects/duckSite/dist/duck-logo.a2603b4e.png1710869316691729919 0
+68/home/godisdead/school-projects/duckSite/dist/duck-logo.a2603b4e.png1710880456554998106 0
 69/home/godisdead/school-projects/duckSite/node_modules/is-glob/LICENSE1709832752092570191 0
 96/home/godisdead/school-projects/duckSite/node_modules/@babel/helper-validator-identifier/scripts1709832751899570581 1
 72/home/godisdead/school-projects/duckSite/node_modules/@parcel/logger/lib1709832754832564655 1
@@ -3804,6 +3804,7 @@
 94/home/godisdead/school-projects/duckSite/node_modules/abortcontroller-polyfill/src/ponyfill.js1709832752234569904 0
 96/home/godisdead/school-projects/duckSite/node_modules/lmdb/node_modules/node-addon-api/README.md1709832754801564718 0
 83/home/godisdead/school-projects/duckSite/node_modules/abortcontroller-polyfill/dist1709832752234569904 1
+67/home/godisdead/school-projects/duckSite/dist/checkout.0090f3a3.css1710914904357442805 0
 108/home/godisdead/school-projects/duckSite/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/mdb.c1709832752251569870 0
 63/home/godisdead/school-projects/duckSite/node_modules/type-fest1709832752032570312 1
 116/home/godisdead/school-projects/duckSite/node_modules/abortcontroller-polyfill/dist/abortcontroller-polyfill-only.js1709832752226569920 0
@@ -4102,7 +4103,7 @@
 83/home/godisdead/school-projects/duckSite/node_modules/css-select/lib/index.d.ts.map1709832751957570464 0
 85/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/regions/QA.js1709832752398569573 0
 82/home/godisdead/school-projects/duckSite/node_modules/css-select/lib/sort.d.ts.map1709832751964570450 0
-64/home/godisdead/school-projects/duckSite/dist/index.1af0eee6.css1710869316683729924 0
+64/home/godisdead/school-projects/duckSite/dist/index.1af0eee6.css1710880456710997740 0
 81/home/godisdead/school-projects/duckSite/node_modules/css-select/lib/types.js.map1709832751970570437 0
 115/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-svgo/node_modules/svgo/dist/svgo.browser.js1709832754895564528 0
 84/home/godisdead/school-projects/duckSite/node_modules/css-select/lib/attributes.d.ts1709832751972570434 0
@@ -4503,7 +4504,7 @@
 85/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/regions/LR.js1709832752385569599 0
 104/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/alternate-stylesheet.js1709832752050570276 0
 81/home/godisdead/school-projects/duckSite/node_modules/lightningcss/node/index.mjs1709832752165570043 0
-73/home/godisdead/school-projects/duckSite/dist/store-bag-icon.9422d95b.svg1710869316624729957 0
+73/home/godisdead/school-projects/duckSite/dist/store-bag-icon.9422d95b.svg1710880456632997923 0
 77/home/godisdead/school-projects/duckSite/node_modules/msgpackr/test-worker.js1709832752211569950 0
 84/home/godisdead/school-projects/duckSite/node_modules/lightningcss/node/targets.d.ts1709832752182570009 0
 85/home/godisdead/school-projects/duckSite/node_modules/svgo/plugins/plugins-types.d.ts1709832752111570153 0
@@ -4894,7 +4895,7 @@
 109/home/godisdead/school-projects/duckSite/node_modules/lmdb/node_modules/node-addon-api/tools/eslint-format.js1709832754797564726 0
 102/home/godisdead/school-projects/duckSite/node_modules/lmdb/node_modules/node-addon-api/tools/README.md1709832754801564718 0
 107/home/godisdead/school-projects/duckSite/node_modules/lmdb/node_modules/node-addon-api/package-support.json1709832754799564722 0
-70/home/godisdead/school-projects/duckSite/dist/button-duck.a94aa5c9.svg1710869316688729921 0
+70/home/godisdead/school-projects/duckSite/dist/button-duck.a94aa5c9.svg1710880456644997895 0
 94/home/godisdead/school-projects/duckSite/node_modules/@parcel/node-resolver-core/lib/_empty.js1709832752349569672 0
 96/home/godisdead/school-projects/duckSite/node_modules/@swc/helpers/cjs/_wrap_async_generator.cjs1709832751965570448 0
 75/home/godisdead/school-projects/duckSite/node_modules/msgpackr/benchmark.md1709832752278569815 0
@@ -4919,6 +4920,7 @@
 91/home/godisdead/school-projects/duckSite/node_modules/csso/node_modules/css-tree/lib/syntax1709832754588565148 1
 110/home/godisdead/school-projects/duckSite/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/mtest.c1709832752272569827 0
 111/home/godisdead/school-projects/duckSite/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/mtest2.c1709832752273569825 0
+68/home/godisdead/school-projects/duckSite/dist/index.0090f3a3.css.map1710914911452428226 0
 111/home/godisdead/school-projects/duckSite/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/mtest3.c1709832752274569823 0
 91/home/godisdead/school-projects/duckSite/node_modules/css-tree/cjs/syntax/node/Brackets.cjs1709832751874570631 0
 111/home/godisdead/school-projects/duckSite/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/mtest6.c1709832752280569811 0
@@ -5027,7 +5029,7 @@
 66/home/godisdead/school-projects/duckSite/node_modules/lmdb/keys.js1709832752330569710 0
 95/home/godisdead/school-projects/duckSite/node_modules/svgo/plugins/removeUnknownsAndDefaults.js1709832752133570108 0
 75/home/godisdead/school-projects/duckSite/node_modules/lmdb/rollup.config.js1709832752335569700 0
-79/home/godisdead/school-projects/duckSite/dist/white-store-bag-icon.d1bae316.png1710869316635729951 0
+79/home/godisdead/school-projects/duckSite/dist/white-store-bag-icon.d1bae316.png1710880456544998130 0
 80/home/godisdead/school-projects/duckSite/node_modules/@parcel/transformer-js/lib1709832753412567524 1
 67/home/godisdead/school-projects/duckSite/node_modules/lmdb/write.js1709832752337569696 0
 77/home/godisdead/school-projects/duckSite/node_modules/is-arrayish/.travis.yml1709832751861570658 0
@@ -5439,7 +5441,7 @@
 125/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/node/CDC.js1709832754872564574 0
 84/home/godisdead/school-projects/duckSite/node_modules/semver/internal/identifiers.js1709832752174570025 0
 100/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/speech-synthesis.js1709832752402569565 0
-68/home/godisdead/school-projects/duckSite/dist/index.e960bebe.css.map1710869847276650824 0
+68/home/godisdead/school-projects/duckSite/dist/index.e960bebe.css.map1710880456709997742 0
 95/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/sql-storage.js1709832752402569565 0
 90/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/srcset.js1709832752402569565 0
 104/home/godisdead/school-projects/duckSite/node_modules/css-select/node_modules/entities/lib/encode.js.map1709832754526565273 0
@@ -5523,7 +5525,7 @@
 89/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/webxr.js1709832752412569544 0
 88/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/woff.js1709832752412569544 0
 89/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/woff2.js1709832752412569544 0
-64/home/godisdead/school-projects/duckSite/dist/about.e423d197.css1710869316709729909 0
+64/home/godisdead/school-projects/duckSite/dist/about.e423d197.css1710880456707997747 0
 77/home/godisdead/school-projects/duckSite/node_modules/@parcel/core/index.d.ts1709832754970564376 0
 92/home/godisdead/school-projects/duckSite/node_modules/caniuse-lite/data/features/wordwrap.js1709832752412569544 0
 104/home/godisdead/school-projects/duckSite/node_modules/css-select/node_modules/entities/lib/escape.js.map1709832754527565271 0
@@ -5870,7 +5872,7 @@
 79/home/godisdead/school-projects/duckSite/node_modules/js-yaml/lib/type/float.js1709832751956570466 0
 77/home/godisdead/school-projects/duckSite/node_modules/js-yaml/lib/type/int.js1709832751957570464 0
 79/home/godisdead/school-projects/duckSite/node_modules/js-yaml/lib/type/pairs.js1709832751971570436 0
-68/home/godisdead/school-projects/duckSite/dist/index.1af0eee6.css.map1710869316687729921 0
+68/home/godisdead/school-projects/duckSite/dist/index.1af0eee6.css.map1710880456711997737 0
 134/home/godisdead/school-projects/duckSite/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/pseudo/common/nth.js1709832754924564469 0
 77/home/godisdead/school-projects/duckSite/node_modules/js-yaml/lib/type/set.js1709832751973570431 0
 77/home/godisdead/school-projects/duckSite/node_modules/js-yaml/lib/type/str.js1709832751974570429 0
@@ -5950,6 +5952,7 @@
 95/home/godisdead/school-projects/duckSite/node_modules/css-tree/cjs/syntax/node/FeatureRange.cjs1709832751961570456 0
 87/home/godisdead/school-projects/duckSite/node_modules/css-tree/cjs/syntax/node/Hash.cjs1709832751969570440 0
 97/home/godisdead/school-projects/duckSite/node_modules/css-tree/cjs/syntax/node/index-generate.cjs1709832751973570431 0
+64/home/godisdead/school-projects/duckSite/dist/index.0090f3a3.css1710914911451428228 0
 103/home/godisdead/school-projects/duckSite/node_modules/css-tree/cjs/syntax/node/index-parse-selector.cjs1709832751973570431 0
 93/home/godisdead/school-projects/duckSite/node_modules/css-tree/cjs/syntax/node/MediaQuery.cjs1709832752021570335 0
 97/home/godisdead/school-projects/duckSite/node_modules/css-tree/cjs/syntax/node/MediaQueryList.cjs1709832752022570332 0

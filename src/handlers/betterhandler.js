@@ -1,5 +1,8 @@
 import products from '../storeItems.json';
 
+/*
+ * HANDLES BAG CONTENTS
+ */
 
 // creates a list of all products in corresponding order
 document.addEventListener('DOMContentLoaded', () => {

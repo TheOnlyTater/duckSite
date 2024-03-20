@@ -1,6 +1,10 @@
 @import './main.css';
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap');
 
+/*
+ *  STANDARDIZES INFO ISLAND FOR EASE OF USE
+ */
+
 .info-island {
     max-width: 500px;
 

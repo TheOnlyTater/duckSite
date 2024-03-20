@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.make-absolute {
+    position: absolute;
+}
+
 /*
     flex
 */
@@ -61,6 +65,17 @@
 .full-width {
     width: 100%;
 }
+
+/* INPUT SIZING CLASSES */
+
+.small-input {
+    width: 50%;
+}
+
+.large-input {
+    width: 80%;
+}
+
 
 /*
  *  Z-INDEXING

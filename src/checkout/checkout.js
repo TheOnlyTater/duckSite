@@ -7,6 +7,7 @@ const checkoutButton = document.getElementById('checkout-button')
 document.addEventListener('DOMContentLoaded', () => {
     const items = getBagItems();
     
+    // if bag is empty
     if (items.length == 0)
     {
         const cont = document.createElement('div');
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = item.images[0];
         container.appendChild(img)
 
+        // conatins name and type
         const productNameCont = document.createElement('span');
         const prodName = document.createElement('b');
         prodName.innerText = item.name;
@@ -51,9 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
         price.innerText = `$${item.price}`;
         container.appendChild(price);
 
+        // contains quantity
         const div = document.createElement('div');
         div.classList.add('product-quantity');
-        
 
         const counter = document.createElement('span');
         counter.innerText = val[1];
@@ -62,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const total = document.createElement('p');
         total.innerText = `$${Math.round(val[1] * item.price)}`;
         
+        // increases item by 1 and updates element
         const addQuant = document.createElement('a');
         addQuant.innerText = '+';
         addQuant.onclick = () => {
@@ -73,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         div.appendChild(addQuant);
         div.appendChild(counter);
         
+        // removes item if pressed
         const removeQuant = document.createElement('a');
         removeQuant.innerText = '-';
         removeQuant.onclick = () => {
@@ -90,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         container.appendChild(total);
         
+        // decrements item by 1 and updates element
         const removeProd = document.createElement('a');
         removeProd.classList.add('remove-product');
         removeProd.onclick = () => {
@@ -108,6 +113,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
+// checkout button has not functionallity currently and
+// remove everything in the bag instead
 checkoutButton.addEventListener('click', () => {
     removeAllItems();
 })

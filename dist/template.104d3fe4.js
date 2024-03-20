@@ -607,6 +607,7 @@ const template = {
     height: document.querySelector(".product-height"),
     weight: document.querySelector(".product-weight")
 };
+// generates product page from json
 document.addEventListener("DOMContentLoaded", ()=>{
     const item = (0, _storeItemsJsonDefault.default)[itemIDX];
     template.title.textContent = item.category;
@@ -625,6 +626,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         addItemsCart.count.textContent = (0, _betterhandler.getProductQuantity)(itemIDX);
     }
 });
+// enables multi button on start
 document.addEventListener("click", ()=>{
     addItemsCart.count.textContent = (0, _betterhandler.getProductQuantity)(itemIDX);
     if ((0, _betterhandler.getProductQuantity)(itemIDX) < 1) {

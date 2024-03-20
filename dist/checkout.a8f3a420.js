@@ -592,6 +592,7 @@ const prodcontainer = document.getElementById("products");
 const checkoutButton = document.getElementById("checkout-button");
 document.addEventListener("DOMContentLoaded", ()=>{
     const items = (0, _betterhandler.getBagItems)();
+    // if bag is empty
     if (items.length == 0) {
         const cont = document.createElement("div");
         cont.classList.add("empty-bag");
@@ -611,6 +612,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         const img = document.createElement("img");
         img.src = item.images[0];
         container.appendChild(img);
+        // conatins name and type
         const productNameCont = document.createElement("span");
         const prodName = document.createElement("b");
         prodName.innerText = item.name;
@@ -622,6 +624,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         const price = document.createElement("p");
         price.innerText = `$${item.price}`;
         container.appendChild(price);
+        // contains quantity
         const div = document.createElement("div");
         div.classList.add("product-quantity");
         const counter = document.createElement("span");
@@ -629,6 +632,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         div.appendChild(counter);
         const total = document.createElement("p");
         total.innerText = `$${Math.round(val[1] * item.price)}`;
+        // increases item by 1 and updates element
         const addQuant = document.createElement("a");
         addQuant.innerText = "+";
         addQuant.onclick = ()=>{
@@ -639,6 +643,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         };
         div.appendChild(addQuant);
         div.appendChild(counter);
+        // removes item if pressed
         const removeQuant = document.createElement("a");
         removeQuant.innerText = "-";
         removeQuant.onclick = ()=>{
@@ -651,6 +656,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         div.appendChild(removeQuant);
         container.appendChild(div);
         container.appendChild(total);
+        // decrements item by 1 and updates element
         const removeProd = document.createElement("a");
         removeProd.classList.add("remove-product");
         removeProd.onclick = ()=>{
@@ -664,6 +670,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
         prodcontainer.appendChild(container);
     });
 });
+// checkout button has not functionallity currently and
+// remove everything in the bag instead
 checkoutButton.addEventListener("click", ()=>{
     (0, _betterhandler.removeAllItems)();
 });
@@ -680,7 +688,9 @@ parcelHelpers.export(exports, "getBagItems", ()=>getBagItems);
 parcelHelpers.export(exports, "getTotalProductQuantity", ()=>getTotalProductQuantity);
 var _storeItemsJson = require("../storeItems.json");
 var _storeItemsJsonDefault = parcelHelpers.interopDefault(_storeItemsJson);
-// creates a list of all products in corresponding order
+/*
+ * HANDLES BAG CONTENTS
+ */ // creates a list of all products in corresponding order
 document.addEventListener("DOMContentLoaded", ()=>{
     if (!localStorage.getItem("bag")) {
         const items = [
